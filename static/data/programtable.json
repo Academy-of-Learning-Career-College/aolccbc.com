@@ -50,13 +50,13 @@
   {
     "name": "Business Administration Co-Op Diploma",
     "weeks": "6 weeks",
-    "cost": "$657",
+    "cost": "$22,293",
     "Syllabus": "<a href='https://smorgs.aolccbc.com/business_administration_co_op.pdf'>Info Sheet</a>"
   },
   {
     "name": "Business Administration Diploma",
     "weeks": "6 weeks",
-    "cost": "$499",
+    "cost": "$17,893",
     "Syllabus": "<a href='https://smorgs.aolccbc.com/business_administration.pdf'>Info Sheet</a>"
   },
   {
@@ -300,10 +300,10 @@
     "Syllabus": "<a href='https://smorgs.aolccbc.com/web_developer.pdf'>Info Sheet</a>"
   },
   {
-    "name": "",
-    "weeks": "0 weeks",
-    "cost": "$NaN",
-    "Syllabus": "<a href='https://smorgs.aolccbc.com/'>Info Sheet</a>"
+    "name": "IT Tech Support Specialist",
+    "weeks": "42 weeks",
+    "cost": "$20,000",
+    "Syllabus": "<a href='https://smorgs.aolccbc.com/it_tech_support_specialist.pdf'>Info Sheet</a>"
   },
   {
     "name": "",
