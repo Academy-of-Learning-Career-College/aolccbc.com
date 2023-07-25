@@ -1,7 +1,7 @@
 # aolccbc.com
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=aolccbc.com&up_color=green&up_message=online&url=https%3A%2F%2Faolccbc.com)
 
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/fireball8931/aolccbc.com)
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Academy-of-Learning-Career-College/aolccbc.com)
 
 This is the source code for aolccbc.com
 
@@ -20,7 +20,7 @@ This project has been converted to use parcel to build the static pages.
 
 To develop/build, you need node.js
 
-- Clone the project by running `git clone https://github.com/fireball8931/aolccbc.com`
+- Clone the project by running `git clone https://github.com/Academy-of-Learning-Career-College/aolccbc.com`
 - CD into aolccbc.com
 - Run ``` npm i ```
 - Run ``` npm run dev ``` to develop
