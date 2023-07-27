@@ -95,7 +95,7 @@ fs.createReadStream('./static/programlisting.csv')
              // Slide
              slidesStream.write(`
                  <div class="column slide ${categoryShortName} show"><a href="~/src/programs/${row.URL}.html">
-                 <img alt="Learn more about ${row.NameofProgram}" src="~/images/${row.URL}.webp">
+                 <img alt="Learn more about ${row.NameofProgram}" src="~/images/full/webp/${row.URL}_full_size.webp?width=273">
                  ${row.NameofProgram}</a></div>
              `);
 

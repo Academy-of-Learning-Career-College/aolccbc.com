@@ -3,11 +3,5 @@
   "reporters":  ["...", "parcel-reporter-static-files-copy"],
   "optimizers": {
     "*.js": ["@parcel/optimizer-terser"]
-  },
-  "transforms": {
-    "*.jpg": ["@parcel/transformer-webp"],
-    "*.jpeg": ["@parcel/transformer-webp"],
-    "*.png": ["@parcel/transformer-webp"],
-    "*.gif": ["@parcel/transformer-webp"]
   }
 }

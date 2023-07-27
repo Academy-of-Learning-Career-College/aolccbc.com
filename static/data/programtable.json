@@ -49,13 +49,13 @@
   },
   {
     "name": "Business Administration Co-Op Diploma",
-    "weeks": "6 weeks",
+    "weeks": "86 weeks",
     "cost": "$22,293",
     "Syllabus": "<a href='https://smorgs.aolccbc.com/business_administration_co_op_diploma.pdf'>Info Sheet</a>"
   },
   {
     "name": "Business Administration Diploma",
-    "weeks": "6 weeks",
+    "weeks": "51 weeks",
     "cost": "$17,893",
     "Syllabus": "<a href='https://smorgs.aolccbc.com/business_administration_diploma.pdf'>Info Sheet</a>"
   },
@@ -234,7 +234,7 @@
     "Syllabus": "<a href='https://smorgs.aolccbc.com/payroll_clerk_certificate.pdf'>Info Sheet</a>"
   },
   {
-    "name": "Pc Support Specialist Diploma",
+    "name": "PC Support Specialist Diploma",
     "weeks": "47 weeks",
     "cost": "$13,604",
     "Syllabus": "<a href='https://smorgs.aolccbc.com/pc_support_specialist_diploma.pdf'>Info Sheet</a>"
@@ -274,5 +274,11 @@
     "weeks": "24 weeks",
     "cost": "$10,774",
     "Syllabus": "<a href='https://smorgs.aolccbc.com/web_developer_diploma.pdf'>Info Sheet</a>"
+  },
+  {
+    "name": "IT Tech Support Specialist",
+    "weeks": "42 weeks",
+    "cost": "$20,000",
+    "Syllabus": "<a href='https://smorgs.aolccbc.com/it_tech_support_specialist_diploma.pdf'>Info Sheet</a>"
   }
 ]
