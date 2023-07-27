@@ -3,15 +3,21 @@
   "description": "This is the source code for aolccbc.com",
   "version": "2.0.0",
   "scripts": {
-    "build": "npm run convertdata && npm run make_programs_js && node ./generate_program_pages.js && node ./build_agency_page.js && npm run sitemap && parcel build",
+    "build": "npm-run-all convert_data parcel:build",
     "check": "node validate.js",
-    "dev": "npm run convertdata && npm run make_programs_js && node ./generate_program_pages.js && parcel",
-    "debug": "npm run make_programs_js && node ./generate_program_pages.js && npm run sitemap && parcel build --log-level verbose",
-    "live_debug": "npm run build_program_pages && parcel --log-level verbose --open",
+    "dev": "npm-run-all convert_data parcel",
+    "debug": "npm-run-all make_programs_js generate_program_pages sitemap parcel:build:verbose",
+    "live_debug": "npm-run-all build_program_pages parcel:verbose open",
     "sitemap": "npx sitemap-generator-cli -f static/sitemap.xml -d 5 -v -l aolccbc.com",
     "make_programs_js": "node ./scripts/compile_programs",
-    "build_program_pages": "node ./generate_program_pages.js",
-    "convertdata": "node ./convert_data.js"
+    "generate_program_pages": "node ./generate_program_pages.js",
+    "convert_data": "npm-run-all make_programs_js generate_program_pages build_agency_page sitemap",
+    "build_agency_page": "node ./build_agency_page.js",
+    "parcel:build": "parcel build",
+    "parcel:build:verbose": "parcel build --log-level verbose",
+    "parcel": "parcel",
+    "parcel:verbose": "parcel --log-level verbose",
+    "open": "parcel --open"
   },
   "overrides": {
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
@@ -78,6 +84,7 @@
     "katex": "^0.16.4",
     "katex-copytex": "^1.0.2",
     "mdb-ui-kit": "^6.4.0",
+    "npm-run-all": "^4.1.5",
     "posthtml": "^0.16.6",
     "posthtml-doctype": "^1.1.1",
     "posthtml-expressions": "^1.11.0",

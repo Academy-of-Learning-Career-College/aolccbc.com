@@ -14,7 +14,10 @@ function xlsxToCsv(inputFile, outputFilePath) {
  // Get the sheet data
  const worksheet = workbook.Sheets[sheetName];
 
- // Convert the sheet to a CSV file
+ // Filter the sheet data based on the value of the Active column
+//  const filteredData = worksheet.filter(row => row.Active === 'Yes');
+
+ // Convert the filtered data to a CSV file
  const csvData = XLSX.utils.sheet_to_csv(worksheet);
 
  // Write the CSV data to a file
