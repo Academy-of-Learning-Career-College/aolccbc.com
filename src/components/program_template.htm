@@ -31,7 +31,7 @@ function toURL(that) {
     catbreadLink.href += `?category=${egory}` ;
 </script>
 <div class="container-flex center">
-    <div id="fullimage"><img src='~/images/full/{{ URL }}_full_size.webp' alt='Program Image'></div>
+    <div id="fullimage"><img src='~/images/full/webp/{{ URL }}_full_size.webp' alt='Program Image'></div>
 </div>
 
 
@@ -264,7 +264,13 @@ function toURL(that) {
                 <tr class="tr-nobottomborder">
                     <td class="title">Method of Delivery</td>
                     <td colspan="2" class="breaksallowed">
-                        Onsite, Remote and Blended using our <br>Integrated Learning &reg;System training
+                        <if condition="onsite==1">Onsite</if>
+                        <if condition="onsite==1"><if condition="remote==1"><if condition="blended==1">, </if><if condition="blended==0"> and </if></if></if>
+                        <if condition="remote==1">Remote</if>
+                        <if condition="onsite==1"><if condition="remote==1"><if condition="blended==1"> and </if><if condition="blended==0"></if></if></if>
+                        <if condition="blended==1">Blended</if>
+
+                         using our <br>Integrated Learning &reg;System training
                         facilitated by qualified learning coaches.
                     </td>
                 </tr>
