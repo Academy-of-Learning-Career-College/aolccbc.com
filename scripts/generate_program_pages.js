@@ -2,13 +2,22 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 const XLSX = require('xlsx');
+require('dotenv').config()
+
+const xlsxfile = process.env.xlsxfile
+const csvFilePath = process.env.csvFilePath
+
+
+//const temp = 'temp'
+// const xlsxfile = './src/data/programlisting.xlsx'; // Specify the path to your XLSX file
+// const csvFilePath = `${temp}/programlisting.csv`; // Specify the desired path for the output CSV file
 
 // Function to convert XLSX file to CSV file
-function xlsxToCsv(inputFile, outputFilePath) {
+function xlsxToCsv(xlsxfile, csvFilePath) {
  // Read the XLSX file
 
 
- const workbook = XLSX.readFile(inputFile);
+ const workbook = XLSX.readFile(xlsxfile);
 
  // Get the first sheet name
  const sheetName = workbook.SheetNames[0];
@@ -23,15 +32,14 @@ function xlsxToCsv(inputFile, outputFilePath) {
  const csvData = XLSX.utils.sheet_to_csv(worksheet);
 
  // Write the CSV data to a file
- fs.writeFileSync(outputFilePath, csvData);
+ fs.writeFileSync(csvFilePath, csvData);
 }
-if (!fs.existsSync('./temp')) {
-    fs.mkdirSync('./temp');
+if (!fs.existsSync('temp')) {
+    fs.mkdirSync('temp');
    }
-const inputFile = './src/data/programlisting.xlsx'; // Specify the path to your XLSX file
-const outputFilePath = './temp/programlisting.csv'; // Specify the desired path for the output CSV file
 
-xlsxToCsv(inputFile, outputFilePath);
+
+xlsxToCsv(xlsxfile, csvFilePath);
 
 // Initialize variables
 let usedCategoryShortNames = '_';
@@ -74,7 +82,7 @@ function convertToURLString(str) {
 }
 
 // Read the CSV file
-fs.createReadStream('./temp/programlisting.csv')
+fs.createReadStream(csvFilePath)
  .pipe(csv())
  .on('data', (row) => {
      // Set the data for this current row
