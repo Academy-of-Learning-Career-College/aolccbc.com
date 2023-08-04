@@ -2,7 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 const smartcrop = require('smartcrop-sharp');
+const folderPath = 'images/carousel';
+const squareFolder = 'images/carousel/square';
 
+if (!fs.existsSync(squareFolder)) {
+  fs.mkdirSync(squareFolder);
+}
 // finds the best crop of src and writes the cropped and resized image to dest.
 function applySmartCrop(src, dest, width, height) {
   return smartcrop.crop(src, { width: width, height: height })
@@ -26,7 +31,7 @@ function findImages(folderPath) {
   files.forEach((file) => {
     const filePath = path.join(folderPath, file);
     const stat = fs.statSync(filePath);
-    const square = path.join(folderPath,"square",file);
+    const square = path.join(squareFolder,file);
     if (stat.isFile() && isImage(file)) {
       images.push(square);
       applySmartCrop(filePath, square, 1000, 1000);
@@ -93,7 +98,7 @@ function exportCarouselToHTML(carouselHTML, outputFile) {
 
 // Main function
 function main() {
-  const folderPath = 'images/carousel';
+
   const outputFile = 'src/components/carousel.htm';
 
   const images = findImages(folderPath);
