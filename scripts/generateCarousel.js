@@ -43,7 +43,7 @@ function findImages(folderPath) {
 
 // Function to check if a file is an image
 function isImage(file) {
-  const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
+  const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.heic'];
   const ext = path.extname(file).toLowerCase();
   return imageExtensions.includes(ext);
 }
