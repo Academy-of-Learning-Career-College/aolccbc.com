@@ -3,7 +3,7 @@
   "description": "This is the source code for aolccbc.com",
   "version": "2.0.0",
   "scripts": {
-    "build": "npm-run-all convert_data parcel:build",
+    "build": "npm-run-all convert_data generateCarousel parcel:build",
     "prep": "node ./scripts/prep.js",
     "dev": "npm-run-all convert_data parcel",
     "debug": "npm-run-all make_programs_js generate_program_pages sitemap parcel:build:verbose",
@@ -13,6 +13,7 @@
     "generate_program_pages": "node ./scripts/generate_program_pages.js",
     "convert_data": "npm-run-all make_programs_js generate_program_pages build_agency_page sitemap",
     "build_agency_page": "node ./scripts/build_agency_page.js",
+    "generateCarousel": "node ./scripts/generateCarousel.js",
     "parcel:build": "parcel build",
     "parcel:build:verbose": "parcel build --log-level verbose",
     "parcel": "parcel",
@@ -27,13 +28,6 @@
     "default": {
       "distDir": "./www"
     }
-  },
-  "engines": {
-    "node": ">=19.8.0",
-    "npm": ">=9.6.0",
-    "posthtml": ">=0.16.6",
-    "@parcel/transformer-jsonld": ">=2.7.0",
-    "parcel": ">=2.7.0"
   },
   "repository": {
     "type": "git",
@@ -90,6 +84,8 @@
     "posthtml-doctype": "^1.1.1",
     "posthtml-expressions": "^1.11.0",
     "posthtml-include": "^1.7.4",
+    "smartcrop": "^2.0.5",
+    "smartcrop-sharp": "^2.0.7",
     "textlint-rule-period-in-list-item": "^1.0.1",
     "textlint-rule-spelling": "^0.3.0",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"

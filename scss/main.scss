@@ -7,8 +7,8 @@
 
 @import "../node_modules/mdb-ui-kit/css/mdb.min.css";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../node_modules/bootstrap/scss/bootstrap";
-
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import 'npm:bootstrap/scss/bootstrap';
 :root {
     --aol-black: rgba(83, 83, 83, 0.8);
     --aol-blue: rgb(90, 203, 218);
@@ -201,52 +201,52 @@ iframe {
 // ... { ... }
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
-@include media-breakpoint-up(md) {
-    .mainpageheader {
-        background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=575.98');
-    }
- }
+//@include media-breakpoint-up(md) {
+//    .mainpageheader {
+ //       background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=575.98');
+  //  }
+ //}
 
 // `md` applies to small devices (landscape phones, less than 768px)
-@include media-breakpoint-up(lg) {
-    .mainpageheader {
-        background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=767.98');
-    }
- }
+// @include media-breakpoint-up(lg) {
+//     .mainpageheader {
+//         background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=767.98');
+//     }
+//  }
 
 // `lg` applies to medium devices (tablets, less than 992px)
-@include media-breakpoint-up(xl) {
-    .mainpageheader {
-        background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=991.98');
-    }
- }
+// @include media-breakpoint-up(xl) {
+//     .mainpageheader {
+//         background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=991.98');
+//     }
+//  }
 
 
 
 // `xl` applies to large devices (desktops, less than 1200px)
-@include media-breakpoint-up(xxl) {
-    .mainpageheader {
-        background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=1199.98');
-    }
- }
+// @include media-breakpoint-up(xxl) {
+//     .mainpageheader {
+//         background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=1199.98');
+//     }
+//  }
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {
-    .mainpageheader {
-        background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=1399.98');
-    }
- }
+// @media (max-width: 1399.98px) {
+//     .mainpageheader {
+//         background-image: url('~/images/AOLCC_is56373070-scaled.webp?width=1399.98');
+//     }
+//  }
 
 .mainpageheader {
 //   background-image: url('~/images/AOLCC_is56373070-scaled.webp');
-  background-repeat: no-repeat;
-  background-size:  100%;
-  display: block;
+//   background-repeat: no-repeat;
+//   background-size:  100%;
+//   display: block;
 }
 
 .mainpageheaderform {
     background-color: var(--dark-blue);
-    margin-left: 60%;
+    // margin-left: 60%;
     // max-width: 400px;
     padding-left: 2%;
     padding-right: 2%;
@@ -303,6 +303,9 @@ iframe {
 
     .mainpageheader {
         background-image: unset;
+    }
+    #carouselExampleIndicators {
+        display: none;
     }
 }
 
@@ -693,4 +696,8 @@ footer td {
 
 #callUsMenuDiv > ul > li {
     display: block;
+}
+.carousel-item {
+    max-height: 625.797px;
+    max-width: 625.797px;
 }
