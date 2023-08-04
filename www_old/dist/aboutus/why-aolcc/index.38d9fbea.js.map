@@ -1,1 +1,0 @@
-{"mappings":"AAAA,kBAAkB;AAClB,WAAW,EAAE,CAAC,CAEd,cAAc;CACd,sGAAsG","sources":["www/js/endofbody.js"],"sourcesContent":["// Update Includes\r\nincludeHTML();\r\n\r\n// Update Date\r\n// document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))"],"names":[],"version":3,"file":"index.38d9fbea.js.map","sourceRoot":"/__parcel_source_root/"}

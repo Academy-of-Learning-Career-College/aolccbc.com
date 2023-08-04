@@ -1,8 +1,10 @@
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config()
 
-const folderPath = './js/programs';
-const outputFile = './js/programs_js.js';
+const folderPath = process.env.programsSrc
+
+const programJs = process.env.programJs
 
 // Get all js files in folder
 const jsFiles = fs.readdirSync(folderPath).filter(file => path.extname(file) === '.js');
@@ -15,6 +17,6 @@ const compiledCode = jsFiles.reduce((acc, file) => {
 }, '');
 
 // Write compiled code to output file
-fs.writeFileSync(outputFile, compiledCode);
+fs.writeFileSync(programJs, compiledCode);
 
-console.log(`Successfully compiled ${jsFiles.length} files into ${outputFile}`);
+console.log(`Successfully compiled ${jsFiles.length} files into ${programJs}`);

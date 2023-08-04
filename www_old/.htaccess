@@ -1,5 +1,0 @@
-AddType application/x-httpd-php php php4 php3 html htm
-
-RewriteEngine On
-RewriteRule ^examprep/(.*)$ https://raw.githubusercontent.com/Academy-of-Learning-Career-College/exam-prep-files/main/$1 [R=301,NC,L]
-RewriteRule ^downloads/(.*)$ https://raw.githubusercontent.com/fireball8931/AOLCCApps/master/$1 [R=301,NC,L]
