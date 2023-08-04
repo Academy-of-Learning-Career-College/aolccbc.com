@@ -40,6 +40,9 @@
   },
   "homepage": "https://github.com/Academy-of-Learning-Career-College/aolccbc.com#readme",
   "devDependencies": {
+
+  },
+  "dependencies": {
     "@babel/core": "^7.21.4",
     "@microsoft/eslint-formatter-sarif": "^3.0.0",
     "@parcel/optimizer-terser": "^2.9.3",
@@ -54,13 +57,11 @@
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-modules": "^0.9.0",
     "process": "^0.11.10",
-    "sharp": "^0.31.3",
     "stream-browserify": "^3.0.0",
     "textlint": "^13.3.2",
     "textlint-rule-no-dead-link": "^5.1.2",
-    "w3c-xml-validator": "^1.1.0"
-  },
-  "dependencies": {
+    "w3c-xml-validator": "^1.1.0",
+    "sharp": "^0.31.3",
     "@fontsource/questrial": "^5.0.0",
     "@fontsource/raleway": "^5.0.5",
     "@fontsource/roboto": "^5.0.0",
