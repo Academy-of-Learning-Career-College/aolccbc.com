@@ -1,7 +1,7 @@
 {
   "name": "aolccbc.com",
   "description": "This is the source code for aolccbc.com",
-  "version": "3.0.0",
+  "version": "2.0.0",
   "scripts": {
     "build": "npm-run-all convert_data parcel:build",
     "prep": "node ./scripts/prep.js",
@@ -28,7 +28,13 @@
       "distDir": "./www"
     }
   },
-  "engines": {},
+  "engines": {
+    "node": ">=19.8.0",
+    "npm": ">=9.6.0",
+    "posthtml": ">=0.16.6",
+    "@parcel/transformer-jsonld": ">=2.7.0",
+    "parcel": ">=2.7.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Academy-of-Learning-Career-College/aolccbc.com.git"
@@ -53,13 +59,18 @@
     "parcel-reporter-static-files-copy": "^1.4.0",
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-modules": "^0.9.0",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "sharp": "^0.31.3",
+    "stream-browserify": "^3.0.0",
+    "textlint": "^13.3.2",
+    "textlint-rule-no-dead-link": "^5.1.2",
+    "w3c-xml-validator": "^1.1.0"
   },
   "dependencies": {
-    "@fontsource/questrial": "^5.0.7",
-    "@fontsource/raleway": "^5.0.7",
-    "@fontsource/roboto": "^5.0.7",
-    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@fontsource/questrial": "^5.0.0",
+    "@fontsource/raleway": "^5.0.5",
+    "@fontsource/roboto": "^5.0.0",
+    "@fortawesome/fontawesome-free": "^6.3.0",
     "@parcel/plugin": "^2.7.0",
     "@popperjs/core": "^2.11.7",
     "axios": "^1.4.0",

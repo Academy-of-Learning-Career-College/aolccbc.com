@@ -7,7 +7,7 @@ function updateExamKits(){
      style = kit.splice(0, 1) || ''
      document.getElementById('instructions').style["display"] = "unset"
      document.getElementById('kits').style["display"] = "unset"
-     if (course === 
+
  } catch (error) {
      kit = ''
      course = ''
