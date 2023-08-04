@@ -53,8 +53,7 @@
     "parcel-reporter-static-files-copy": "^1.4.0",
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-modules": "^0.9.0",
-    "process": "^0.11.10",
-    "sharp": "^0.32.4"
+    "process": "^0.11.10"
   },
   "dependencies": {
     "@fontsource/questrial": "^5.0.7",
