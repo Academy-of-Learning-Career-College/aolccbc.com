@@ -1,0 +1,26 @@
+<div class="card mb-3">
+ <div class="row g-0">
+   <div class="col-md-4" style="max-width: 200px">
+   <img src="~/images/staff/cropped/{{ name }}.jpeg" class="card-img-top rounded border" style="max-width: 200px;max-height: 200px;" alt="{{ full_name }}">
+   <h5 class="card-title">{{ full_name }}</h5>
+ </div>
+ <div class=" col-md-8">
+   <div class="card-body">
+     <h6 class="card-text">{{ job_title }}</h6>
+     <p class="card-subtitle">{{ campus }}</p>
+     <hr>
+
+     <button
+       data-bs-target="#{{ name }}"
+       class="btn btn-primary"
+       data-bs-toggle="collapse"
+       aria-expanded="false"
+       aria-controls="{{ name }}"
+       >Learn More</button>
+       <div id="{{ name }}" class="collapse collapse-horizontal" style="min-width: 300px;">{{ bio }} <if condition="bio2"> <br><br>{{ bio2 }}</if><if condition="bio3"><br><br>{{ bio3 }}</if><if condition="bio4"><br><br>{{ bio4 }}</if></div>
+
+     </div>
+         </div>
+   </div>
+ </div>
+
