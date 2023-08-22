@@ -11,7 +11,7 @@ function applySmartCrop(src, dest, width, height) {
      const crop = result.topCrop;
      return sharp(src)
        .extract({ width: crop.width, height: crop.height, left: crop.x, top: crop.y })
-       .resize(width, height)
+       .resize(width, height).withMetadata()
        .toFile(dest);
    })
 }

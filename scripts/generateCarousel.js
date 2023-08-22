@@ -1,6 +1,6 @@
 const fs = require('fs');
 const processImages = require('./processImages')
-
+let carouselCSS =''
 // Usage example
 
 // finds the best crop of src and writes the cropped and resized image to dest.
@@ -9,7 +9,7 @@ const processImages = require('./processImages')
 // Function to generate the carousel HTML
 function generateCarousel(images) {
   let carouselHTML = `
-    <div id="carouselExampleIndicators" class="carousel slide col" data-bs-ride="carousel" data-bs-interval="6000">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade col" data-bs-ride="carousel" data-bs-interval="3000">
       <ol class="carousel-indicators">
   `;
 
@@ -26,22 +26,22 @@ function generateCarousel(images) {
 
   images.forEach((image, index) => {
     carouselHTML += `
-      <div class="carousel-item ${index === 0 ? 'active' : ''}">
-        <img src="~/${image.replace('\\','/')}?as=webp&height=625.797" class="d-block" alt="funky Image ${index + 1}">
+      <div class="carousel-item ${index === 0 ? 'active' : ''}" id="car${index + 1}">
+
       </div>
+    `;
+    carouselCSS += `
+    #car${index + 1} {
+      background: url("../${image.replaceAll('\\','/')}?as=webp");
+      background-size: cover;
+      -moz-background-size: cover;
+    }
+
     `;
   });
 
   carouselHTML += `
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </a>
     </div>
   `;
 
@@ -54,6 +54,11 @@ function exportCarouselToHTML(carouselHTML, outputFile) {
   console.log(`Carousel exported to ${outputFile}`);
 }
 
+function exportCarouselToCSS(carouselCSS, outputCSS) {
+  fs.writeFileSync(outputCSS,carouselCSS);
+  console.log(`Carousel exported to ${outputCSS}`)
+}
+
 // Main function
 function main() {
   const outputFile = 'src/components/carousel.htm';
@@ -61,6 +66,8 @@ function main() {
   const images = processImages(folderPath);
   const carouselHTML = generateCarousel(images);
   exportCarouselToHTML(carouselHTML, outputFile);
+  const outputCSS = 'css/carousel.css'
+  exportCarouselToCSS(carouselCSS,outputCSS)
 }
 
 
