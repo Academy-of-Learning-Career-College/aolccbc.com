@@ -1,6 +1,7 @@
 const fs = require('fs');
 const processImages = require('./processImages')
 let carouselCSS =''
+let indexes = 0
 // Usage example
 
 // finds the best crop of src and writes the cropped and resized image to dest.
@@ -33,12 +34,27 @@ function generateCarousel(images) {
     carouselCSS += `
     #car${index + 1} {
       background: url("../${image.replaceAll('\\','/')}?as=webp");
-      background-size: cover;
       -moz-background-size: cover;
+      background-size: cover;
+      animation-delay: ${index*8}s;
     }
 
     `;
+    indexes++
   });
+
+  carouselCSS += `
+  .carousel-item {
+    position:-webkit-sticky;
+    position:sticky;
+    top:25px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+      background-repeat: no-repeat;
+      -webkit-animation: fade ${indexes*15}s infinite;
+      animation: fade ${indexes*15}s infinite;
+}`;
 
   carouselHTML += `
       </div>
