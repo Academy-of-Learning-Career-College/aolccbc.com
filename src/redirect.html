@@ -1,14 +1,23 @@
 <script>
  var url2Process = window.location.search;
- var query = url2Process.substring(1);
- var urlPT1 = 'https://www5.campuslogin.com/Contacts/admin/ViewContactDetails.aspx?mid=10401002&ContactID=';
+ var query = url2Process.substring(1).split('&')[0];
+ var defaultdb = `https://www5.campuslogin.com/Contacts/admin/ViewContactDetails.aspx?mid=10401002&ContactID=`
+ var leaddb = `https://www5.campuslogin.com/contacts/admin/ViewContactDetails.aspx?mid=10401001&ContactID=`
+ if(url2Process.substring(1).split('&')[1] === 'l'){
+    var urlPT1 = leaddb
+ } else {
+    var urlPT1 = defaultdb
+ }
+
  var urlPT3 = '&ContactType=p';
  var code_id = query;
 
- console.log(code_id);
+ var dest = urlPT1 + code_id + urlPT3;
+ console.log(url2Process.substring(1).split('&')[1])
+ console.log(dest);
 
  // redirect
 
  // https://www5.campuslogin.com/Contacts/admin/ViewContactDetails.aspx?mid=10401002&ContactID=383452
- window.location = urlPT1 + code_id + urlPT3;
+ window.location = dest ;
 </script>
