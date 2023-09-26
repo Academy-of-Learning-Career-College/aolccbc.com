@@ -3,7 +3,7 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instruction. An admissions interview will be administered to determineif the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them. Part-time students may set their own schedules to a minimum of two training sessions per week. These times may be scheduled during the day, evenings, or on weekends."
+                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instruction. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them. Part-time students may set their own schedules to a minimum of two training sessions per week. These times may be scheduled during the day, evenings, or on weekends."
             }
         ]
     },
@@ -11,7 +11,7 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "This program prepares students to deal with the problems they may encounter when supporting Personal Computers in an office environment. It provides in-depth knowledge of both computer hardware and software, and preparesstudents to take the CompTIA A+, Network+, and Security+ certification exams. Students will have practical hands-on experience in maintenance of PCs, mobile devices, laptops, operating systems and printers, network and network devices, and computer securitysuch as cryptography and access control, as well as business-related topics such as disaster recovery and risk management. Successful students may choose to progress to advanced qualifications such as MCSA. "
+                "content": "This program prepares students to deal with the problems they may encounter when supporting Personal Computers in an office environment. It provides in-depth knowledge of both computer hardware and software, and prepares students to take the CompTIA A+, Network+, and Security+ certification exams. Students will have practical hands-on experience in maintenance of PCs, mobile devices, laptops, operating systems and printers, network and network devices, and computer security such as cryptography and access control, as well as business-related topics such as disaster recovery and risk management. Successful students may choose to progress to advanced qualifications such as MCSA. "
             }
         ]
     },
@@ -19,7 +19,7 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "Skilled PC Support Specialists are in high demand in today's skilled environment. Virtually all organizations with multiple computers require the skills of PC Support Specialists who can become invaluable members of a managementteam."
+                "content": "Skilled PC Support Specialists are in high demand in today's skilled environment. Virtually all organizations with multiple computers require the skills of PC Support Specialists who can become invaluable members of a management team."
             }
         ]
     },
@@ -60,7 +60,7 @@
             {
                 "style": "li",
                 "li_title": "Simulations and Drills",
-                "content": "Practical Applications – 2 Units"
+                "content": "Practical Applications - 2 Units"
             },
             {
                 "style": "li",

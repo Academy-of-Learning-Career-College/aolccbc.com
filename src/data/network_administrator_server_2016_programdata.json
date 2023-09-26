@@ -3,7 +3,7 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. An admissions interview will be administered to determineif the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them."
+                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them."
             }
         ]
     },
@@ -11,7 +11,7 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "This program provides students with the necessary skill and knowledge to plan, install, and provide routine control over and manage exceptional situations in relation to quality communications network services in an informationsystem. It provides in-depth knowledge of evaluating communications hardware, software, and transmission service alternatives against changing business requirements, maintaining links with network suppliers, monitoring network performance, providing supportfor systems, localizing and rectifying faults in networks and handling non-routine user/customer problems, and providing expertise and practical assistance in delivering service that complies with statutory and other standards, as well as strategic andtactical plans."
+                "content": "This program provides students with the necessary skill and knowledge to plan, install, and provide routine control over and manage exceptional situations in relation to quality communications network services in an information system. It provides in-depth knowledge of evaluating communications hardware, software, and transmission service alternatives against changing business requirements, maintaining links with network suppliers, monitoring network performance, providing support for systems, localizing and rectifying faults in networks and handling non-routine user/customer problems, and providing expertise and practical assistance in delivering service that complies with statutory and other standards, as well as strategic and tactical plans."
             }
         ]
     },
@@ -75,7 +75,7 @@
             {
                 "style": "li",
                 "li_title": "Operating Systems",
-                "content": "Advanced level of proficiency in a Windows operatingsystem"
+                "content": "Advanced level of proficiency in a Windows operating system"
             },
             {
                 "style": "li",
@@ -100,7 +100,7 @@
             {
                 "style": "li",
                 "li_title": "Simulations and Drills",
-                "content": "Practical Applications – 1 Unit"
+                "content": "Practical Applications - 1 Unit"
             },
             {
                 "style": "li",

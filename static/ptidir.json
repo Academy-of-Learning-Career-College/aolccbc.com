@@ -14883,7 +14883,7 @@
         {
             "institutionNum": "ID-02632",
             "institutionName": "Brighton College",
-            "institutionNameAndStreet": "Brighton College<br><small class=\"muted\">101 – 4603 Kingsway</small>",
+            "institutionNameAndStreet": "Brighton College<br><small class=\"muted\">101 - 4603 Kingsway</small>",
             "certificateType": "Designated",
             "certificateStatus": "Certified",
             "city": "Burnaby",
@@ -17733,7 +17733,7 @@
         {
             "institutionNum": "ID-04243",
             "institutionName": "Eduglobal College",
-            "institutionNameAndStreet": "Eduglobal College<br><small class=\"muted\">500 – 628 Sixth Avenue,</small>",
+            "institutionNameAndStreet": "Eduglobal College<br><small class=\"muted\">500 - 628 Sixth Avenue,</small>",
             "certificateType": "Interim Designated",
             "certificateStatus": "Certified, renewing",
             "city": "New Westminster",
@@ -17802,7 +17802,7 @@
             "DT_RowId": "03926",
             "accredited": "Designated,Certified",
             "enforcement": false,
-            "PreviousOperatingName": "Academy of Learning College - Williams Lake\nAcademy of Learning College – Coquitlam",
+            "PreviousOperatingName": "Academy of Learning College - Williams Lake\nAcademy of Learning College - Coquitlam",
             "legalNames": "West Coast Skills For Life Inc."
         },
         {
@@ -18678,7 +18678,7 @@
         {
             "institutionNum": "ID-03954",
             "institutionName": "GEOS Languages Plus",
-            "institutionNameAndStreet": "GEOS Languages Plus<br><small class=\"muted\">Unit 405 – 568 Seymour Street</small>",
+            "institutionNameAndStreet": "GEOS Languages Plus<br><small class=\"muted\">Unit 405 - 568 Seymour Street</small>",
             "certificateType": "Designated",
             "certificateStatus": "Certified, renewing",
             "city": "Vancouver",
@@ -19758,7 +19758,7 @@
         {
             "institutionNum": "ID-03834",
             "institutionName": "Canadian Vocational Training Centre",
-            "institutionNameAndStreet": "Canadian Vocational Training Centre<br><small class=\"muted\">101 – 3306 32nd Avenue</small>",
+            "institutionNameAndStreet": "Canadian Vocational Training Centre<br><small class=\"muted\">101 - 3306 32nd Avenue</small>",
             "certificateType": "Designated",
             "certificateStatus": "Certified",
             "city": "Vernon",
@@ -19968,7 +19968,7 @@
         {
             "institutionNum": "ID-03930",
             "institutionName": "Vancouver Premier College Of Arts And Science",
-            "institutionNameAndStreet": "Vancouver Premier College Of Arts And Science<br><small class=\"muted\">103 – 5300 No. 3 Road</small>",
+            "institutionNameAndStreet": "Vancouver Premier College Of Arts And Science<br><small class=\"muted\">103 - 5300 No. 3 Road</small>",
             "certificateType": "Designated",
             "certificateStatus": "Certified",
             "city": "Richmond",
@@ -19983,7 +19983,7 @@
         {
             "institutionNum": "ID-03930",
             "institutionName": "Vancouver Premier College Of Arts And Science",
-            "institutionNameAndStreet": "Vancouver Premier College Of Arts And Science<br><small class=\"muted\">200 – 1338 West Broadway</small>",
+            "institutionNameAndStreet": "Vancouver Premier College Of Arts And Science<br><small class=\"muted\">200 - 1338 West Broadway</small>",
             "certificateType": "Designated",
             "certificateStatus": "Certified",
             "city": "Vancouver",
@@ -21093,7 +21093,7 @@
         {
             "institutionNum": "ID-03898",
             "institutionName": "Tamwood Careers",
-            "institutionNameAndStreet": "Tamwood Careers<br><small class=\"muted\">302 – 4293 Mountain Square</small>",
+            "institutionNameAndStreet": "Tamwood Careers<br><small class=\"muted\">302 - 4293 Mountain Square</small>",
             "certificateType": "Designated",
             "certificateStatus": "Certified, renewing",
             "city": "Whistler",
@@ -21123,7 +21123,7 @@
         {
             "institutionNum": "ID-03960",
             "institutionName": "Tamwood Language Centres",
-            "institutionNameAndStreet": "Tamwood Language Centres<br><small class=\"muted\">302 – 4293 Mountain Square</small>",
+            "institutionNameAndStreet": "Tamwood Language Centres<br><small class=\"muted\">302 - 4293 Mountain Square</small>",
             "certificateType": "Designated",
             "certificateStatus": "Certified, renewing",
             "city": "Whistler",
@@ -23673,7 +23673,7 @@
         {
             "institutionNum": "ID-03804",
             "institutionName": "Upper Career College of Business & Technology",
-            "institutionNameAndStreet": "Upper Career College of Business & Technology<br><small class=\"muted\">#200 – 789 West Pender Street</small>",
+            "institutionNameAndStreet": "Upper Career College of Business & Technology<br><small class=\"muted\">#200 - 789 West Pender Street</small>",
             "certificateType": "Not Certified </br> <small class=\"muted\"> Previously Designated</small>",
             "certificateStatus": "Previously certified, voluntary closure",
             "city": "Vancouver",

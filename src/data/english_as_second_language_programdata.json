@@ -7,7 +7,7 @@
             },
             {
                 "style": "p",
-                "content": "This course has been designed to accommodate learners’ unique needs by using technology to adapt the course to the specific English proficiency, interests, and goals of each student, and by using videos and games to keep learners engaged."
+                "content": "This course has been designed to accommodate learners' unique needs by using technology to adapt the course to the specific English proficiency, interests, and goals of each student, and by using videos and games to keep learners engaged."
             },
             {
                 "style": "h2",
@@ -30,10 +30,10 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "The purpose of the Pitman English course is to improve students’ English reading, writing, listening, and speaking skills and to develop their vocabulary, grammar, pronunciation, and fluency."
+                "content": "The purpose of the Pitman English course is to improve students' English reading, writing, listening, and speaking skills and to develop their vocabulary, grammar, pronunciation, and fluency."
             },
             {"style": "h2", "content": "Study Plan"},
-            {"style": "p", "content": "For maximum benefit, students should reserve two or more hours each day for their Pitman English course –– with a minimum of 90 minutes spent working with the course materials and assessments and a minimum of 30 minutes dedicated to participating in a group lesson."}
+            {"style": "p", "content": "For maximum benefit, students should reserve two or more hours each day for their Pitman English course -- with a minimum of 90 minutes spent working with the course materials and assessments and a minimum of 30 minutes dedicated to participating in a group lesson."}
         ]
     },
     "corecourses": {
@@ -41,9 +41,9 @@
         "paragraphs": [
             {"ul_start": "true"},
             {"style": "li", "li_title": "Needs Analysis", "content": "Before beginning the course, learners are guided through a comprehensive questionnaire to determine their language learning goals, interests, and study habits. This information allows Pitman English to establish a clear picture of each student and to refine the content of the course to make the learning relevant, engaging, and personalized."},
-            {"style": "li", "li_title": "Proficiency Assessment", "content": "Following the needs analysis, students complete a proficiency assessment. The proficiency assess-ment typically takes 30-40 minutes to complete and assesses the student’s level of proficiency in grammatical knowledge, listening comprehension, and reading comprehension. This assessment and the needs analysis, together, are used to person-alize the course to meet the needs of the student."},
+            {"style": "li", "li_title": "Proficiency Assessment", "content": "Following the needs analysis, students complete a proficiency assessment. The proficiency assessment typically takes 30-40 minutes to complete and assesses the student's level of proficiency in grammatical knowledge, listening comprehension, and reading comprehension. This assessment and the needs analysis, together, are used to personalize the course to meet the needs of the student."},
             {"style": "li", "content": "The proficiency assessment is repeated at the end of the course for learners to measure their improvement."},
-            {"style": "li", "li_title": "Learning Activities", "content": "Based on the results of the needs analysis and the proficiency assessment, students are enrolled in 3 personalized units. Each unit consists of lessons organized around a theme that centers on the goals and interests of the student. Each lesson contains 3 fun and engaging activities to develop students’ language skills. Each unit is followed by an achievement test to provide students with feedback on their progress."},
+            {"style": "li", "li_title": "Learning Activities", "content": "Based on the results of the needs analysis and the proficiency assessment, students are enrolled in 3 personalized units. Each unit consists of lessons organized around a theme that centers on the goals and interests of the student. Each lesson contains 3 fun and engaging activities to develop students' language skills. Each unit is followed by an achievement test to provide students with feedback on their progress."},
             {"style": "li", "li_title": "Live Instruction", "content": "To reinforce learning, students have access to an unlimited number of group classes offered every day at a variety of times. Classes are led by trained instructors and are available at every level."}
         ]
     },

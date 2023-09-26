@@ -3,7 +3,7 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. Applicants whose first language is not English mustprovide proof of English proficiency."
+                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. Applicants whose first language is not English must provide proof of English proficiency."
             },
             {
                 "style": "p",
@@ -19,11 +19,11 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "In the Software and Web Developer diploma program, students learn the coding languages that every web developer needs to know: HTML, CSS, and JavaScript.Students then broaden their skillset with a strong foundation in SQL, C#, and the.NET Framework that will lead to additional opportunities in the world of software development. "
+                "content": "In the Software and Web Developer diploma program, students learn the coding languages that every web developer needs to know: HTML, CSS, and JavaScript.Students then broaden their skill-set with a strong foundation in SQL, C#, and the.NET Framework that will lead to additional opportunities in the world of software development. "
             },
             {
                 "style": "p",
-                "content": "Throughout the program, students gain hands - on experience with a range of software development projects that buildin complexity as students add programming skills and languages to their toolkit. "
+                "content": "Throughout the program, students gain hands - on experience with a range of software development projects that build in complexity as students add programming skills and languages to their toolkit. "
             },
             {
                 "style": "p",
@@ -46,7 +46,7 @@
             },
             {
                 "style": "li",
-                "content": "Translatewire frames and storyboards into functional, responsive websites "
+                "content": "Translate wire frames and storyboards into functional, responsive websites "
             },
             {
                 "style": "li",
@@ -86,7 +86,7 @@
             {
                 "style": "li",
                 "li_title": " Operating Systems",
-                "content": "Intermediate level of proficiencywith Windows OS"
+                "content": "Intermediate level of proficiency with Windows OS"
             },
             {
                 "style": "li",

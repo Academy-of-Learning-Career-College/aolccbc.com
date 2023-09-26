@@ -6,15 +6,15 @@
             { "style": "li", "content": "Grade 12 or equivalent, or Mature Student Status with successful completion of CAST testing" },
             { "style": "li", "content": "Adequate level of physical health to be able to fulfill job requirements (as stated in self-assessment)" },
             { "style": "li", "content": "Other medical tests (e.g., TB Test) or proof of vaccinations (e.g., Hepatitis B, COVID-19, etc ) may be required by industry prior to placement" },
-            { "style": "li", "content": "Good command of the English language – both written and oral(as per completion of the Wonderlic SLE admission test with a minimum score of 18)" },
+            { "style": "li", "content": "Good command of the English language - both written and oral(as per completion of the Wonderlic SLE admission test with a minimum score of 18)" },
             { "style": "li", "content": "Completion of standard registration form" },
             { "ul_end": "true" }
         ]
     },
     "programhighlights": {
         "paragraphs": [{ "style": "p", "content": "With the aging population, the tremendous advancements in technology, and our demand for the best quality of life, the healthcare industry is facing a growing shortage of well-trained personnel. Throughout the North American healthcare industry, there is an acute need to increase the size of the workforce, and raise the skill level of that workforce." },
-            { "style": "p", "content": "well-trained Community Service Worker (CSW) is equipped with a flexible, adaptable career.Social and community service workers administer and implement a variety of social assistance programs and community services. They assist clients to address personal and social problems. They are employed by social service and government agencies, mentalhealth agencies, group homes, shelters, substance abuse centres, school boards, correctional facilities, and other establishments." },
-            { "style": "p", "content": "This program provides students with the base knowledge, skills, and work experience tobecome permanently employable in a CSW setting. Skill development is delivered in three areas:" },
+            { "style": "p", "content": "well-trained Community Service Worker (CSW) is equipped with a flexible, adaptable career.Social and community service workers administer and implement a variety of social assistance programs and community services. They assist clients to address personal and social problems. They are employed by social service and government agencies, mental health agencies, group homes, shelters, substance abuse centres, school boards, correctional facilities, and other establishments." },
+            { "style": "p", "content": "This program provides students with the base knowledge, skills, and work experience to become permanently employable in a CSW setting. Skill development is delivered in three areas:" },
             { "ul_start": "true" },
             { "style": "li", "content": "Comprehensive community service worker knowledge, which includes psychology, sociology, family life,mental health, addictions, criminology, dealing with at-risk populations, case management, counselling, ethics, business communication, report writing, and government and social services" },
             { "style": "li", "content": "Full range of computer and office skills, including current software applications, keyboarding skills, and personal and professional development" },
@@ -43,10 +43,10 @@
             { "style": "li", "content": "Introduction to Keyboarding "},
             { "style": "li", "content": "Keyboard Skill Building Level 1 "},
             { "style": "li", "content": "Microsoft Windows Level 1 "},
-            { "style": "li", "content": "Microsoft Word– Level 1 "},
-            { "style": "li", "content": "Microsoft Excel– Level 1 "},
-            { "style": "li", "content": "Microsoft Access– Level 1 "},
-            { "style": "li", "content": "MicrosoftOutlook– Level 1 "},
+            { "style": "li", "content": "Microsoft Word- Level 1 "},
+            { "style": "li", "content": "Microsoft Excel- Level 1 "},
+            { "style": "li", "content": "Microsoft Access- Level 1 "},
+            { "style": "li", "content": "MicrosoftOutlook- Level 1 "},
             { "style": "li", "content": "Thought Patterns For A Successful Career "},
             { "style": "li", "content": "Job Search and Résumé Writing "},
             { "ul_end": "true "},
@@ -69,7 +69,7 @@
             { "ul_end": "true "}
         ]
     },
-    
+
     "salarystart": 28502,
     "salaryend": 48307
 }

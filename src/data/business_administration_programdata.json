@@ -1,13 +1,13 @@
 {
     "admitreq": { "paragraphs": [{ "style": "p", "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instruction. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them. Part-time students may set their own schedules to a minimum of two training sessions per week. These times may be scheduled during the day, evenings, or on weekends." }] },
     "programhighlights": {
-        "paragraphs": [{ "style": "p", "content": "The Business Administration Diploma is designed to prepare students for the demands of today’s fast-paced business environment. Its objective is to expose students to a vast array of business knowledge, management and administration skills, and practical tools that will assist them in dealing with situations within a business-related career. Courses focus on professional skills required by today’s employers, including knowledge of how businesses utilize technology, e-commerce, business correspondence, office procedures, project management, and employment success strategies." },
+        "paragraphs": [{ "style": "p", "content": "The Business Administration Diploma is designed to prepare students for the demands of today's fast-paced business environment. Its objective is to expose students to a vast array of business knowledge, management and administration skills, and practical tools that will assist them in dealing with situations within a business-related career. Courses focus on professional skills required by today's employers, including knowledge of how businesses utilize technology, e-commerce, business correspondence, office procedures, project management, and employment success strategies." },
             { "style": "p", "content": "This program provides students with:" },
             { "ul_start": "true" },
             { "style": "li", "content": "A solid foundation in basic principles of a business environment, including current computer applications, marketing, accounting and business law." },
             { "style": "li", "content": "An introduction to the most relevant aspects of business management and administration." },
             { "style": "li", "content": "Professional skills in high demand by employers. These skills include:  'teamwork, communication, customer service, leadership, research and problem solving.''" },
-            { "style": "li", "content": "A solid knowledge of business practices and principles.It also develops the student’ s ability to relate and apply this knowledge to current social and economic conditions." },
+            { "style": "li", "content": "A solid knowledge of business practices and principles.It also develops the student' s ability to relate and apply this knowledge to current social and economic conditions." },
             { "style": "li", "content": "Proficiency in Microsoft Office Applications and accounting." },
             { "ul_end": "true" },
             { "style": "p", "content": "Please note that the focus of this program is to train individuals for entry - level support and / or management trainee positions.It will also provide the skills to progress into management - level careers, given the proper combination of skills, experience, and personal attributes." }
@@ -32,8 +32,8 @@
             { "style": "li", "li_title": "Graphics / Presentation", "content": "Basic level of proficiency in Microsoft PowerPoint" },
             { "style": "li", "li_title": "Data Management", "content": "Basic level of proficiency in Microsoft Access" },
             { "style": "li", "li_title": "Business Skills", "content": "Project Management Fundamentals Level 1, Business Economics, Business in the Digital Age, and Business Administration Integrative Project" },
-            { "style": "li", "li_title": "Simulations and Drills", "content": "Practical Applications– 2 Units" },
-            { "style": "li", "li_title": "Practical Applications– 2 Units", "content": "Job Search and Résumé Writing" },
+            { "style": "li", "li_title": "Simulations and Drills", "content": "Practical Applications- 2 Units" },
+            { "style": "li", "li_title": "Practical Applications- 2 Units", "content": "Job Search and Résumé Writing" },
             { "ul_end": "true" }
         ]
     },

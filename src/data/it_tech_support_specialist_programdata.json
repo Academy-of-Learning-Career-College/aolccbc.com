@@ -34,7 +34,7 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "Relevant job titles include: information technology support technician, technical support specialist – information technology, system support representative, technical support agent, technical support representative."
+                "content": "Relevant job titles include: information technology support technician, technical support specialist - information technology, system support representative, technical support agent, technical support representative."
             }
         ]
     },
@@ -69,22 +69,22 @@
             },
             {
                 "style": "li",
-                "li_title": "Prepare for CompTIA’s A+ certification exams:",
+                "li_title": "Prepare for CompTIA's A+ certification exams:",
                 "content": "Learn about PC hardware and peripherals, mobile device hardware, networking and troubleshooting hardware and network connectivity issues; learn to install and configure multiple operating systems, address security, the fundamentals of cloud computing, and operational procedures "
             },
             {
                 "style": "li",
-                "li_title":"Prepare for CompTIA’s Network+ certification exam:",
+                "li_title":"Prepare for CompTIA's Network+ certification exam:",
                 "content": "Learn about configuring, troubleshooting, and managing common network wireless and wired devices, basic network design and connectivity, understand and maintain network documentation, identify network limitations and weaknesses, and implement network security, standards, and protocols "
             },
             {
                 "style": "li",
-                "li_title":"Prepare for CompTIA’s Server+ certification exam:",
+                "li_title":"Prepare for CompTIA's Server+ certification exam:",
                 "content": "Learn about server administration concepts, virtualization and cloud computing, physical and network security, managing physical inventory and assets, server hardware, storage management, install and configure an OS, troubleshoot OS, application, and networks, manage data security and service and data availability, and decommission servers "
             },
             {
                 "style": "li",
-                "li_title":"Prepare for CompTIA’s Security+ certification exam:",
+                "li_title":"Prepare for CompTIA's Security+ certification exam:",
                 "content": "Learn about security concepts, tools, and procedures to react to security incidents; it ensures that security personnel are anticipating security risks and guarding against them "
             },
             {
