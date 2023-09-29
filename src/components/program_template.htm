@@ -2,13 +2,13 @@
 <div class="breadcrumbs" id="breadcrumbs">
     <a href="~/src/programs.html">Programs </a>
     >
-    <a href="~/src/programs.html" id="catbread">{{ Category }} </a>
+    <a href="~/src/programs.html" id="catbread">{{Category}} </a>
     >
-    {{ NameofProgram }}
+    {{NameofProgram}}
 </div>
 <div class="container-flex center">
     <h1>
-        <div id="progtitle" class="progtitle1"> {{ NameofProgram }} </div>
+        <div id="progtitle" class="progtitle1"> {{NameofProgram}} </div>
     </h1>
 </div>
 <script>
@@ -25,13 +25,13 @@ function toURL(that) {
   thistoo = thistoo.replace(regex4, '')
   return thistoo.replace(regex5, '_').toLowerCase()
 }
-    let cat = '{{ Category }}'
+    let cat = '{{Category}}'
     let egory = toURL(cat)
     const catbreadLink = document.getElementById('catbread');
     catbreadLink.href += `?category=${egory}` ;
 </script>
 <div class="container-flex center">
-    <div id="fullimage"><img src='~/images/full/webp/{{ URL }}_full_size.webp' alt='Program Image'></div>
+    <div id="fullimage"><img src='~/images/full/webp/{{URL}}_full_size.webp' alt='Program Image' loading="lazy"></div>
 </div>
 
 
@@ -48,7 +48,7 @@ function toURL(that) {
 
             <each loop="paragraph in json_data.admitreq.paragraphs">
                 <if condition="paragraph.style == 'p'">
-                    <p> {{ paragraph.content || '' }} </p>
+                    <p> {{paragraph.content || ''}} </p>
                 </if>
                 <if condition="paragraph.ul_start">
                     <ul>
@@ -56,9 +56,9 @@ function toURL(that) {
                 <if condition="paragraph.style == 'li'">
                     <li>
                         <if condition="paragraph.li_title">
-                            <h4> {{ paragraph.li_title || '' }} </h4>
+                            <h4> {{paragraph.li_title || ''}} </h4>
                         </if>
-                        <p> {{ paragraph.content || '' }} </p>
+                        <p> {{paragraph.content || ''}} </p>
                     </li>
                 </if>
                 <if condition="paragraph.ul_end">
@@ -72,7 +72,7 @@ function toURL(that) {
 
             <each loop="paragraph in json_data.programhighlights.paragraphs">
                 <if condition="paragraph.style == 'p'">
-                    <p> {{ paragraph.content || '' }} </p>
+                    <p> {{paragraph.content || ''}} </p>
                 </if>
                 <if condition="paragraph.ul_start">
                     <ul>
@@ -80,9 +80,9 @@ function toURL(that) {
                 <if condition="paragraph.style == 'li'">
                     <li>
                         <if condition="paragraph.li_title">
-                            <h4> {{ paragraph.li_title || '' }} </h4>
+                            <h4> {{paragraph.li_title || ''}} </h4>
                         </if>
-                        <p> {{ paragraph.content || '' }} </p>
+                        <p> {{paragraph.content || ''}} </p>
                     </li>
                 </if>
                 <if condition="paragraph.ul_end">
@@ -98,7 +98,7 @@ function toURL(that) {
 
             <each loop="paragraph in json_data.careeropp.paragraphs">
                 <if condition="paragraph.style == 'p'">
-                    <p> {{ paragraph.content || '' }} </p>
+                    <p> {{paragraph.content || ''}} </p>
                 </if>
                 <if condition="paragraph.ul_start">
                     <ul>
@@ -106,9 +106,9 @@ function toURL(that) {
                 <if condition="paragraph.style == 'li'">
                     <li>
                         <if condition="paragraph.li_title">
-                            <h4> {{ paragraph.li_title || '' }} </h4>
+                            <h4> {{paragraph.li_title || ''}} </h4>
                         </if>
-                        <p> {{ paragraph.content || '' }} </p>
+                        <p> {{paragraph.content || ''}} </p>
                     </li>
                 </if>
                 <if condition="paragraph.ul_end">
@@ -123,7 +123,7 @@ function toURL(that) {
 
             <each loop="paragraph in json_data.corecourses.paragraphs">
                 <if condition="paragraph.style == 'p'">
-                    <p> {{ paragraph.content || '' }} </p>
+                    <p> {{paragraph.content || ''}} </p>
                 </if>
                 <if condition="paragraph.ul_start">
                     <ul>
@@ -131,9 +131,9 @@ function toURL(that) {
                 <if condition="paragraph.style == 'li'">
                     <li>
                         <if condition="paragraph.li_title">
-                            <h4> {{ paragraph.li_title || '' }} </h4>
+                            <h4> {{paragraph.li_title || ''}} </h4>
                         </if>
-                        <p> {{ paragraph.content || '' }} </p>
+                        <p> {{paragraph.content || ''}} </p>
                     </li>
                 </if>
                 <if condition="paragraph.ul_end">
@@ -158,14 +158,14 @@ function toURL(that) {
     <td class="title title_with_emoji">
         <i class="fas fa-scroll"></i>Program&nbsp;Type:
     </td>
-    <td colspan="2">{{ Type }}</td>
+    <td colspan="2">{{Type}}</td>
 </tr>
 <tr>
     <td class="title title_with_emoji">
         <i class="fas fa-search-dollar"></i>Anticipated&nbsp;Salary:
     </td>
     <td colspan="2">
-    {{ (json_data.salarystart*1).toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }) }} &ndash; {{ (json_data.salaryend*1).toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }) }}
+    {{(json_data.salarystart*1).toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })}} &ndash; {{(json_data.salaryend*1).toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })}}
     </td>
 </tr>
 <tr class="tr-nobottomborder">
@@ -174,8 +174,8 @@ function toURL(that) {
         Program&nbsp;Duration:
     </td>
     <td id="duration" colspan="2">
-        Weeks: {{ WeeksDuration }}<br>
-        Hours: {{ Hours }} <br>
+        Weeks: {{WeeksDuration}}<br>
+        Hours: {{Hours}} <br>
 
                     </td>
                 </tr>
@@ -206,42 +206,42 @@ function toURL(that) {
                     <td>$100</td>
                 </tr>
                 <if condition="!textbooks1">
-                    <!-- {{ textbooks1=0}} -->
+                    <!-- {{textbooks1=0}} -->
                 </if>
                 <if condition="textbooks1!==0">
                 <tr>
                     <td class="title">Textbooks:</td>
-                      <td>{{ textbooks1 }}</td>
-                      <td>{{ textbooks1 }}</td>
+                      <td>{{textbooks1}}</td>
+                      <td>{{textbooks1}}</td>
                 </tr>
             </if>
 
             <if condition="!coursemat">
-                <!-- {{ coursemat=0 }} -->
+                <!-- {{coursemat=0}} -->
                 </if>
 
             <if condition="coursemat!==0">
                 <tr>
                     <td class="title">Course Materials:</td>
 
-                        <td>{{ (coursemat*1).toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }) }}</td>
-                        <td>{{ (coursemat*1).toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }) }}</td>
+                        <td>{{(coursemat*1).toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })}}</td>
+                        <td>{{(coursemat*1).toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })}}</td>
 
                     </tr>
                 </if>
                 <if condition="!other">
-                    <!-- {{ other=0 }} -->
+                    <!-- {{other=0}} -->
                 </if>
                 <if condition="other!==0">
                 <tr>
                     <td class="title">Other Fees:</td>
-                    <td>{{ other }}</td>
-                    <td>{{ other }}</td>
+                    <td>{{other}}</td>
+                    <td>{{other}}</td>
                 </tr>
             </if>
                 <tr>
                     <td class="title">Program Syllabus:</td>
-                    <td colspan="2"><a href="https://smorgs.aolccbc.com/{{ SMORG }}" target="_blank" rel="noopener noreferrer">Click
+                    <td colspan="2"><a href="https://smorgs.aolccbc.com/{{SMORG}}" target="_blank" rel="noopener noreferrer">Click
                             here to
                             Download</a></td>
 
@@ -258,7 +258,7 @@ function toURL(that) {
                 <tr>
                     <td class="title">Graduation Requirements</td>
                     <td colspan="2" class="breaksallowed">
-                        Students must maintain a 75% program average to obtain a {{ Type }}
+                        Students must maintain a 75% program average to obtain a {{Type}}
                     </td>
                 </tr>
                 <tr class="tr-nobottomborder">
@@ -277,7 +277,7 @@ function toURL(that) {
                 <tr class="tr-nobottomborder">
                     <td class="title">Approval</td>
                     <td colspan="2" class="breaksallowed">
-                        The {{ NameofProgram }} was reviewed and approved by the registrar of the Private Training Institutions Branch (PTIB) of the Ministry of Post-Secondary Education and Future Skills.
+                        The {{NameofProgram}} was reviewed and approved by the registrar of the Private Training Institutions Branch (PTIB) of the Ministry of Post-Secondary Education and Future Skills.
                     </td>
                 </tr>
             </tbody>

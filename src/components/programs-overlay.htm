@@ -1,11 +1,11 @@
 <div id="programoverlay" class="overlay"><button class="closebutton" onclick="closeOverlay();">X<br>Close</button>
     <div class="container-flex center">
     <h1>
-        <div id="progtitle" class="progtitle1">{{ progtitle }}</div>
+        <div id="progtitle" class="progtitle1">{{progtitle}}</div>
     </h1>
 </div>
 <div class="container-flex center">
-    <div id="fullimage"><img src="images/full/{{ progtitle_as_url }}_full_size.webp" alt="Program Image"></div>
+    <div id="fullimage"><img src="images/full/{{progtitle_as_url}}_full_size.webp" alt="Program Image"></div>
 </div>
 <div class="container-flex program-info" id="program-info">
     <div class="header lefthr">
@@ -15,13 +15,13 @@
         <div class="p-2 col1">
             <div class="container">
                 <h2>Admission Requirements</h2>
-                <div id="admitreq"><p>{{ admitreq }}</p></div>
+                <div id="admitreq"><p>{{admitreq}}</p></div>
             </div>
             <div class="container">
                 <h2>Program Highlights</h2>
             </div>
             <div class="container">
-                <div id="programhighlights">{{ highlights }}</div>
+                <div id="programhighlights">{{highlights}}</div>
             </div>
         </div>
         <div class="p-2 col2">
@@ -30,7 +30,7 @@
                     <h2>Career Opportunities</h2>
                 </div>
                 <div class="container">
-                    <div id="careeropp">{{ careeropp }}</div>
+                    <div id="careeropp">{{careeropp}}</div>
                 </div>
             </div>
             <div>
@@ -38,7 +38,7 @@
                     <h2>CORE COURSES</h2>
                 </div>
                 <div class="container">
-                   {{ corecourses }}
+                   {{corecourses}}
                 </div>
             </div>
         </div>
@@ -52,15 +52,15 @@
                     </tr>
                     <tr>
                         <td class="title title_with_emoji"><i class="fas fa-search-dollar"></i>&nbsp;Anticipated&nbsp;Salary:</td>
-                        <td colspan="2">${{ start_salary }} - ${{ end_salary }}
+                        <td colspan="2">${{start_salary}} - ${{end_salary}}
                         </td>
                     </tr>
                     <tr class="tr-nobottomborder">
                         <td class="title title_with_emoji"><i class="fas fa-calendar"></i>&nbsp;Program&nbsp;Duration:</td>
                         <td id="duration" colspan="2">
-                            Weeks: {{ weeks }}<br>
-                            Hours: {{ hours }} <br>
-                            <p id="workexphours">{{ workexphours }}</p>
+                            Weeks: {{weeks}}<br>
+                            Hours: {{hours}} <br>
+                            <p id="workexphours">{{workexphours}}</p>
 
                         </td>
                     </tr>
@@ -71,8 +71,8 @@
                     </tr>
                     <tr>
                         <td class="title">Tuition:</td>
-                        <td>${{ dtuition }}</td>
-                        <td>${{ ituition }}</td>
+                        <td>${{dtuition}}</td>
+                        <td>${{ituition}}</td>
                     </tr>
                     <tr>
                         <td class="title">Application:</td>
@@ -91,12 +91,12 @@
                     </tr>
                     <tr>
                         <td class="title">Other Fees:</td>
-                        <td>${{ other_fees }}</td>
-                        <td>$4{{ other_fees }}</td>
+                        <td>${{other_fees}}</td>
+                        <td>$4{{other_fees}}</td>
                     </tr>
                     <tr>
                         <td class="title">Program Syllabus:</td>
-                        <td colspan="2"><a href="smorgs/{{ progtitle_as_url }}_diploma.pdf" target="_blank" rel="noopener noreferrer">Click here to Download</a></td>
+                        <td colspan="2"><a href="smorgs/{{progtitle_as_url}}_diploma.pdf" target="_blank" rel="noopener noreferrer">Click here to Download</a></td>
 
                     </tr>
                     <tr>
@@ -109,7 +109,7 @@
                     </td></tr>
                     <tr><td class="title">Graduation Requirements</td>
                     <td colspan="2" class="breaksallowed">
-                    Students must maintain a 75% program average to obtain a {{ credential }}
+                    Students must maintain a 75% program average to obtain a {{credential}}
                     </td>
                     </tr>
                     <tr class="tr-nobottomborder">

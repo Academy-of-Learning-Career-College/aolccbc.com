@@ -50,21 +50,54 @@
 <h1>Frequently Asked Questions</h1>
 <h4>You have questions, here are some answers.</h4>
 </div>
+<div class="row">
+<div class="col">
+    <h2>Admissions (3)</h2>
 <div class="accordion-flush accordion" id="faqAccordian">
-
-    <div class="accordion-item">
-        <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                How do I know which diploma or certificate program will best suit me?
-              </button>
-        </h3>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordian">
-            <div class="accordion-body">We have general information on each of our diploma and certificate programs on the Academy of Learning website, as well as on our individual campus pages. We also have Admissions Representatives at each of our campus locations who will be able to discuss all of the programs Academy of Learning has to offer.</div>
-          </div>
-    </div>
-
+    <include src="./src/components/faq.htm">{
+            "sequence": "1",
+            "question": "How do I know which diploma or certificate program will best suit me?",
+            "answer": "We have general information on each of our diploma and certificate programs on the Academy of Learning website, as well as on our individual campus pages. We also have Admissions Representatives at each of our campus locations who will be able to discuss all of the programs Academy of Learning has to offer."
+        }
+    </include>
+    <include src="./src/components/faq.htm">{
+            "sequence": "2",
+            "question": "A career college sounds great to me, but how will I afford it?",
+            "answer": "Our Admissions Representatives and Campus staff can provide you with all the tools and information you need regarding financing. Financial assistance may be available for those who qualify."
+        }
+    </include>
+    <include src="./src/components/faq.htm">{
+            "sequence": "3",
+            "question": "Will I be lost in a large class?",
+            "answer": "Never! Our model ensures that each and every one of our adult learners has the opportunity to engage with a qualified Learning Coach for one-to-one assistance and guidance."
+        }
+    </include>
 </div>
-
+</div>
+<div class="col">
+    <h2>General (3)</h2>
+<div class="accordion-flush accordion" id="faqAccordian">
+    <include src="./src/components/faq.htm">{
+            "sequence": "4",
+            "question": "I am older than the typical student. Will I fit in?",
+            "answer": "Yes, we don't refer to our learners as 'students'. We refer to them as 'Adult Learners', as that's what you are and who we serve. We strive to create a safe and comfortable atmosphere where you can feel at ease while you learn."
+        }
+    </include>
+    <include src="./src/components/faq.htm">{
+            "sequence": "5",
+            "question": "Will I be able to handle the workload since I work part time?",
+            "answer": "Yes, AOLCC's scheduling has been designed with you in mind. We will be flexible and ensure you can achieve work/life balance."
+        }
+    </include>
+    <include src="./src/components/faq.htm">{
+            "sequence": "6",
+            "question": "Can I attend AOLCC if I do not have my High School Diploma or GED?",
+            "answer": "Yes, of course. We will administer an entrance examination to ensure you have the ability to succeed at our campuses, and we will help you to ensure you continue to succeed."
+        }
+    </include>
+</div>
+</div>
+</div>
 </div>
 
 </section>
