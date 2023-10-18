@@ -1,0 +1,19 @@
+name: Merge Scheduledd changes
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+  schedule:
+    # 0AM UTC
+    - cron: 0 0 * * *
+
+jobs:
+  merge_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: gr2m/merge-schedule-action@v1
+        with:
+           time_zone: "America/Vancouver"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
