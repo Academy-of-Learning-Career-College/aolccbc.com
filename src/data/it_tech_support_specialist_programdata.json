@@ -3,13 +3,13 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "1. Graduated from grade 12 or equivalent (B.C. high school diploma, B.C. Adult Graduation Diploma, General Educational Development) or equivalent secondary school completion from another jurisdiction OR"},
+                "content": "1. Graduated from grade 12 or equivalent (B.C. high school diploma, B.C. Adult Graduation Diploma, General Educational Development) or equivalent secondary school completion from another jurisdiction. 19 years of age or over at the start of your program OR"},
             {
                 "style": "p",
-                "content": "2. 19 years of age or older before the start of classes and has demonstrated evidence at the appropriate level of literacy, numeracy, comprehension and/or written skills to enable successful completion of the program."},
+                "content": "2. Mature Student status (19 years of age or over at the start of your program) AND Pass the Academy of Learning Career College Entrance Evaluation with 75% or higher (demonstrating both English comprehension and math skills) OR"},
             {
                 "style": "p",
-                "content": "3. Full-time student must attend the required hours per week as per the course schedule and may do so at times convenient to them."}
+                "content": "3. Applicants who do not meet one of the requirements above must provide proof of English proficiency through an English language assessment (IELTS 5.5 or CELPIP 6)"}
 
 
         ]
