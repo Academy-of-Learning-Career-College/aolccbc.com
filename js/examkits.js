@@ -16,9 +16,9 @@ function updateExamKits(){
  }
 
 //  cf
-//  let dlRoot = "https://examkits.aolccbc.com/"
+ let dlRoot = "https://examkits.aolccbc.com/"
 //  azure
- let dlRoot = "https://github.com/Academy-of-Learning-Career-College/exam-prep-files/blob/main/"
+//  let dlRoot = "https://github.com/Academy-of-Learning-Career-College/exam-prep-files/blob/main/"
  let suffix = "Practical_Exam_Kit.zip"
 
 
