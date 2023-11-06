@@ -15,7 +15,9 @@ function updateExamKits(){
      style = ''
  }
 
- let dlRoot = "https://examkits.aolccbc.com/"
+ //  let dlRoot = "https://examkits.aolccbc.com/"
+//  https://raw.githubusercontent.com/Academy-of-Learning-Career-College/exam-prep-files/main/ACS/19/1/Practical_Exam_Kit.zip
+ let dlRoot = "https://raw.githubusercontent.com/Academy-of-Learning-Career-College/exam-prep-files/main/"
  let suffix = "Practical_Exam_Kit.zip"
 
 
