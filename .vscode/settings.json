@@ -28,5 +28,6 @@
         "Résumé",
         "salarystart",
         "Wonderlic"
-    ]
+    ],
+    "editor.inlineSuggest.showToolbar": "always"
 }
