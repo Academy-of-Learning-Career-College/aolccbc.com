@@ -5,7 +5,9 @@
     "spellright.documentTypes": [
         "markdown",
         "latex",
-        "plaintext"
+        "plaintext",
+        "ini",
+        "json"
     ],
     "cSpell.words": [
         "admitreq",

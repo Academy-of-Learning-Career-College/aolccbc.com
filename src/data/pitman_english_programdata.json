@@ -24,15 +24,7 @@
                 "style": "li",
                 "content": ""
             },
-            {
-                "style": "li",
-                "content": "Professional skills in high demand by employers. These skills include: negotiating, decision making, teamwork, communication, customer service, leadership, research and problem solving."
-            },
-            {
-                "style": "li",
-                "content": "A solid knowledge ofproject administration and management practices and principles. Proficiency in Microsoft Office Applications."
-            },
-            {
+           {
                 "ul_end": "true"
             }
         ]
@@ -41,7 +33,7 @@
         "paragraphs": [
             {
                 "style": "p",
-                "content": "Graduates of this program are employed in healthcare and social assistance, public administration, wholesale trade, finance and insurance, retail, and other services. Careers that correspond with the skills learned in thisprogram are: "
+                "content": "Graduates of this program are employed in healthcare and social assistance, public administration, wholesale trade, finance and insurance, retail, and other services. Careers that correspond with the skills learned in this program are: "
             },
             {
                 "ul_start": "true"
