@@ -10,7 +10,8 @@
 
         }
     </include>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <link rel="stylesheet" href="../node_modules/prismjs/themes/prism-twilight.min.css">
 </head>
 
 <body>
@@ -23,12 +24,9 @@
         <ol>
             <li>Fastest Method:
                 <ol>
-                    <li><code id="command">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Academy-of-Learning-Career-College/aolccbc.com/main/static/Install-TT.ps1'))</code>
-                        <button id="copy-button" class="btn" data-clipboard-target="#command">
-                            Copy
-                            <i class="clipboard-icon fas fa-clipboard"></i>
-                          </button>
-                        <script src="~/js/copyCode.js"></script>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"/></svg>+X, A</li>
+                    <li>
+                        Type in: <pre><code class="lang-powershell" data-prismjs-copy="Copy">iex (iwr aolccb.com/t)</code></pre>
                     </li>
 
                 </ol>
@@ -45,8 +43,8 @@
                 <ul>
                     <li>Method 1.
                         <ol>
-                            <li>Press WIN+X, A to start Powershell as admin</li>
-                            <li>Type <code> winget install vcredist2010x86</code></li>
+                            <li>Press <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"/></svg>+X, A to start Powershell as admin</li>
+                            <li>Type <pre><code class="lang-powershell">winget install vcredist2010x86</code></pre></li>
                         </ol>
                     </li>
                     <li>Method 2. Download from <a
@@ -58,10 +56,10 @@
                 <ol>
                     <li>Method 1
                         <ol>
-                            <li><code>WIN+X, A</code> to open Powershell as Admin (On Remote Sessions, tell student to
+                            <li><code><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"/></svg>+X, A</code> to open Powershell as Admin (On Remote Sessions, tell student to
                                 select <code>Yes</code> on the prompt.</li>
                             <li>Type
-                                <code>Get-WindowsOptionalFeature -Online *netfx* | Enable-WindowsOptionalFeature -Online</code>
+                                <pre><code class="lang-powershell">Get-WindowsOptionalFeature -Online *netfx* | Enable-WindowsOptionalFeature -Online</code></pre>
                             </li>
                         </ol>
 
@@ -87,15 +85,11 @@
 
     </main>
 
-    <script>
-        function copyTheCode() {
-            let copyText = document.getElementById("installttcode");
-            // copyText.select();
-            // copyText.setSelectionRange(0, 99999);
-            navigator.clipboard.writeText(copyText.innerText);
-            alert("Copied the code, now right click in the Powershell window and hit enter");
-        }
-    </script>
+    
+    <script src="../node_modules/prismjs/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.js"></script>
+    <script src="../node_modules/prismjs/plugins/autoloader/prism-autoloader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.js"></script>
     <include src="./src/components/footer.htm"></include>
 </body>
 
