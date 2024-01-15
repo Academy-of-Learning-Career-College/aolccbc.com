@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-      <meta charset="utf-8">
+    <meta charset="utf-8">
 
     <title>Installing Typing Trainer Manually</title>
     <include src="./src/components/head.htm">{
@@ -10,7 +10,13 @@
 
         }
     </include>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"
+        integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../node_modules/prismjs/themes/prism.css">
+    <link rel="stylesheet" href="../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css">
+    <link rel="stylesheet" href="../node_modules/prismjs/plugins/command-line/prism-command-line.css">
+    <link rel="stylesheet" href="../css/tt.css">
 </head>
 
 <body>
@@ -18,35 +24,41 @@
 
     <main>
         <p>
-            <h1>Looking to submit your results? <a href="https://www.sharedrop.io/rooms/db6eef11-3664-4e05-b81d-9196159e1f55">Click here</a></h1>
+        <h1>Looking to submit your results?<a
+                href="https://www.sharedrop.io/rooms/db6eef11-3664-4e05-b81d-9196159e1f55"> Click here</a></h1>
         </p>
         <ol>
             <li>Fastest Method:
                 <ol>
-                    <li><code id="command">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Academy-of-Learning-Career-College/aolccbc.com/main/static/Install-TT.ps1'))</code>
-                        <button id="copy-button" class="btn" data-clipboard-target="#command">
-                            Copy
-                            <i class="clipboard-icon fas fa-clipboard"></i>
-                          </button>
-                        <script src="~/js/copyCode.js"></script>
-                    </li>
-
-                </ol>
-
-
-            </li>
-            <li>Download ACME <a
-                    href="https://pub-ba40a2c327284ac787fcf7379eaa7030.r2.dev/acmepro.2011.setup.v216.1.exe">from
+                    <li>
+<pre class="command-line" 
+    data-prompt="ps c:\users\chris>"
+    data-continuation-prompt=">>"
+    data-filter-output="(out)"
+    data-continuation-str=" `"><code class="language-powershell">Set-ExecutionPolicy Bypass -Scope Process -Force; `
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Academy-of-Learning-Career-College/aolccbc.com/main/static/Install-TT.ps1'))
+</code></pre>
+</li>
+<li>
+    <pre>
+        <code class="language-powershell">
+            iex (irm http://localhost/i.html)
+        </code>
+    </pre>
+</li>
+</ol>
+</li>
+            <li>Download ACME <a href="https://pub-ba40a2c327284ac787fcf7379eaa7030.r2.dev/acmepro.2011.setup.v216.1.exe">from
                     CloudFlare</a></li>
-            <li>Download Typing Trainer <a
-                    href="https://pub-ba40a2c327284ac787fcf7379eaa7030.r2.dev/typingtrainersetup_v1.68.exe">from
+            <li>Download Typing Trainer <a href="https://pub-ba40a2c327284ac787fcf7379eaa7030.r2.dev/typingtrainersetup_v1.68.exe">from
                     CloudFlare</a></li>
             <li>Download VisualC++ 2013 Redistributable
                 <ul>
                     <li>Method 1.
                         <ol>
                             <li>Press WIN+X, A to start Powershell as admin</li>
-                            <li>Type <code> winget install vcredist2010x86</code></li>
+                            <li>Type <pre class="line-numbers"><code class="language-powershell">winget install vcredist2010x86</code></pre></li>
                         </ol>
                     </li>
                     <li>Method 2. Download from <a
@@ -84,7 +96,7 @@
             <li>Set up accounts</li>
         </ol>
 
-
+<a href="i.html">I</a>
     </main>
 
     <script>
@@ -96,6 +108,44 @@
             alert("Copied the code, now right click in the Powershell window and hit enter");
         }
     </script>
+    <script>
+        const copyButtonLabel = "Copy Code";
+
+        // use a class selector if available
+        let blocks = document.querySelectorAll("pre");
+
+        blocks.forEach((block) => {
+            // only add button if browser supports Clipboard API
+            if (navigator.clipboard) {
+                let button = document.createElement("button");
+
+                button.innerText = copyButtonLabel;
+                block.appendChild(button);
+
+                button.addEventListener("click", async () => {
+                    await copyCode(block, block.querySelector("button"));
+                });
+            }
+        });
+
+        async function copyCode(block, button) {
+            let code = block.querySelector("code");
+            let text = code.innerText;
+
+            await navigator.clipboard.writeText(text);
+
+            // visual feedback that task is completed
+            button.innerText = "Code Copied";
+
+            setTimeout(() => {
+                button.innerText = copyButtonLabel;
+            }, 700);
+        }
+    </script>
+    <script src="../node_modules/prismjs/prism.js"></script>
+    <script src="../node_modules/prismjs/components/prism-powershell.js"></script>
+    <script src="../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+    <script src="../node_modules/prismjs/plugins/command-line/prism-command-line.js"></script>
     <include src="./src/components/footer.htm"></include>
 </body>
 
