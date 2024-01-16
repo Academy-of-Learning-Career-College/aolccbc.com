@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Set the starting URL
-base_url = "127.0.0.1:1234"
+base_url = "http://127.0.0.1:1234"  # Ensure you're using http:// or https://
 
 # Initialize a set to store visited URLs
 visited_urls = set()
@@ -15,8 +15,12 @@ def crawl(url):
     # Add the URL to the visited set
     visited_urls.add(url)
 
-    # Send a GET request to the URL
-    response = requests.get(url)
+    try:
+        # Send a GET request to the URL with a timeout
+        response = requests.get(url, timeout=5)
+    except requests.RequestException as e:
+        print(f"Request failed: {e} - {url}")
+        return
 
     # Check if the response was successful
     if response.status_code != 200:

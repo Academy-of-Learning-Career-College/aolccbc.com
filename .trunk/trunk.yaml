@@ -16,6 +16,16 @@ runtimes:
     - python@3.10.8
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
+  ignore:
+    - linters: [checkov]
+      paths:
+        - static/.well-known/did-configuration.json
+    - linters: [ALL]
+      paths:
+        - .github
+    - linters: [markdownlint]
+      paths:
+        - src/components/programtable.md
   enabled:
     - taplo@0.8.1
     - actionlint@1.6.26
@@ -40,3 +50,10 @@ actions:
     - trunk-fmt-pre-commit
   enabled:
     - trunk-upgrade-available
+tools:
+  enabled:
+    - gitleaks@8.18.1
+    - cspell@8.3.2
+  runtimes:
+    - node
+    - python
