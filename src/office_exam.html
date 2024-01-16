@@ -1,115 +1,114 @@
 <!DOCTYPE html lang="en">
 <html lang="en">
+  <head>
+    <include src="./src/components/head.htm">{ "title" : "Home" } </include>
+  </head>
+  <body>
+    <include src="./src/components/navbar.htm"></include>
 
-<head>
-    <include src="./src/components/head.htm">{
-    "title" : "Home"
-
-    }
-    </include>
-
-</head>
-<body>
-<include src="./src/components/navbar.htm"></include>
-
-<main>
-    <style type="text/css">
+    <main>
+      <style type="text/css">
         body {
-              font-family: Arial, sans-serif;
-              font-size: 16px;
-              line-height: 1.5;
-              color: #333;
-              margin: 0;
-              padding: 0;
-            }
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          line-height: 1.5;
+          color: #333;
+          margin: 0;
+          padding: 0;
+        }
 
-            h1 {
-              font-size: 28px;
-              color: #0072C6;
-              text-align: center;
-              margin: 20px 0;
-            }
+        h1 {
+          font-size: 28px;
+          color: #0072c6;
+          text-align: center;
+          margin: 20px 0;
+        }
 
-            h2 {
-              font-size: 22px;
-              color: #a9cd40;
-              margin-top: 40px;
-              margin-bottom: 10px;
-            }
+        h2 {
+          font-size: 22px;
+          color: #a9cd40;
+          margin-top: 40px;
+          margin-bottom: 10px;
+        }
 
-            p {
-              margin: 20px 0;
-            }
+        p {
+          margin: 20px 0;
+        }
 
-            ul {
-              list-style: disc;
-              margin-left: 20px;
-            }</style>
-    <div class="container" id="maincontent">
+        ul {
+          list-style: disc;
+          margin-left: 20px;
+        }
+      </style>
+      <div class="container" id="maincontent">
         <script>
-            query = window.location.search
-            try {
-                kit = query.substring(1).split('&').find(param => param.split('=')[0].toLowerCase() === 'kit').split('=')[1].toUpperCase().split("")
-            course = kit.splice(0,3).join("")
-            edition = kit.splice(0,2).join("")
-            style = kit.splice(0,1)
-            } catch (error) {
-                //silently continue
-            }
+          query = window.location.search;
+          try {
+            kit = query
+              .substring(1)
+              .split("&")
+              .find((param) => param.split("=")[0].toLowerCase() === "kit")
+              .split("=")[1]
+              .toUpperCase()
+              .split("");
+            course = kit.splice(0, 3).join("");
+            edition = kit.splice(0, 2).join("");
+            style = kit.splice(0, 1);
+          } catch (error) {
+            //silently continue
+          }
 
+          let dlRoot = "https://examkits.aolccbc.com/";
+          let suffix = "Practical_Exam_Kit.zip";
+          let coursesArray = [
+            { course: "WRD", courseName: "Word", ver: 19, level: [1, 2, 3] },
+            { course: "EXC", courseName: "Excel", ver: 19, level: [1, 2, 3] },
+            { course: "PPT", courseName: "PowerPoint", ver: 19, level: [1, 2] },
+            { course: "ACS", courseName: "Access", ver: 19, level: [1, 2] },
+          ];
 
+          if (typeof kit !== "undefined") {
+            lol = [
+              coursesArray.find(function (obj) {
+                return obj["course"] === course;
+              }),
+            ];
+            coursesArray = lol;
+            coursesArray[0].level = kit;
+            download = dlRoot.concat(
+              coursesArray[0].course,
+              "/19/",
+              coursesArray[0].level,
+              "/",
+              suffix,
+            );
+          }
 
-
-            let dlRoot = "https://examkits.aolccbc.com/"
-            let suffix = "Practical_Exam_Kit.zip"
-            let coursesArray = [
-                {"course" : "WRD", "courseName" : "Word", "ver" : 19, "level" : [
-                    1,2,3
-                ]},
-                {"course" : "EXC", "courseName" : "Excel","ver" : 19, "level" : [
-                    1,2,3
-                ]},
-                {"course" : "PPT","courseName" : "PowerPoint", "ver" : 19, "level" : [
-                    1,2
-                ]},
-                {"course" : "ACS", "courseName" : "Access", "ver" : 19, "level" : [
-                    1,2
-                ]},
-            ]
-
-            if (typeof kit !== 'undefined') {
-                lol = [coursesArray.find(function(obj) { return obj["course"] === course;})]
-                coursesArray = lol
-                coursesArray[0].level = kit
-                download = dlRoot.concat(coursesArray[0].course,"/19/",coursesArray[0].level,"/",suffix)
-            }
-
-            let examType
-            const openBookExams = ["ACS"]
-            if (openBookExams.includes(coursesArray[0].course)){
-                examType = "open book, unlike"
-            } else {
-                examType = "closed book, like"
-            }
-            console.log(examType)
-            let examPolicies = [
-                "You must get 75% to pass the exam.",
-                "All Software exams (such as this one) are 'Open Program', You are expected to open the program you just learned and refer to it during the exam.",
-                "Microsoft Access Level 1 and 2 are Open Book exams",
-                "If you have not done the hands-on exercises due to not having Office 2019 installed on your computer, please log into Office.com with your school email to get a complimentary copy for use during your studies. If you need help with this, call the campus.",
-                "The time limit is 3 hours per part - this is for a reason.",
-                "Please try to take at least 1 hour to complete the exam to give yourself sufficient time to read and understand the questions.",
+          let examType;
+          const openBookExams = ["ACS"];
+          if (openBookExams.includes(coursesArray[0].course)) {
+            examType = "open book, unlike";
+          } else {
+            examType = "closed book, like";
+          }
+          console.log(examType);
+          let examPolicies = [
+            "You must get 75% to pass the exam.",
+            "All Software exams (such as this one) are 'Open Program', You are expected to open the program you just learned and refer to it during the exam.",
+            "Microsoft Access Level 1 and 2 are Open Book exams",
+            "If you have not done the hands-on exercises due to not having Office 2019 installed on your computer, please log into Office.com with your school email to get a complimentary copy for use during your studies. If you need help with this, call the campus.",
+            "The time limit is 3 hours per part - this is for a reason.",
+            "Please try to take at least 1 hour to complete the exam to give yourself sufficient time to read and understand the questions.",
             "If there is a question that you do not understand, you can call the campus and ask for clarification. We cannot give you the answer, but we can reword the question for you.",
             "Your 1st attempt is free, and you can get up to 100%",
             "Your 2nd attempt is free, but the maximum grade is 89%",
             "There is a $30 fee for the 3rd attempt. The maximum grade is 89%",
-            "If you fail the 3rd attempt, you will have to pay for and retake the entire course again."
+            "If you fail the 3rd attempt, you will have to pay for and retake the entire course again.",
+          ];
 
-            ]
-
-            let instructions
-            if (typeof kit !=="undefined") {
-                instructions = `
+          let instructions;
+          if (typeof kit !== "undefined") {
+            instructions = `
                 <h1>Microsoft ${coursesArray[0].courseName} 2019 Level ${coursesArray[0].level} Practical Exam Instructions</h1>
                 <p>Hey!</p>
                 <p>
@@ -147,58 +146,53 @@
         Remember, it&#39;s really important to finish the practice file before you take the exam. Half the questions on the exam are about the practice file, so if you don&#39;t finish it, the highest grade you can get is 50%.</p>
     <p>
         We wish you the best of luck in taking your exam, and we hope that you find the Practical Exam Kit helpful. If you have any questions, please let us know.</p>
-                `
-            } else {
-                instructions = `
+                `;
+          } else {
+            instructions = `
 
 <p>As requested, here is the practical exam kit</p>
 <p ><b><u><mark>
 IMPORTANT: PLEASE COMPLETE THE PRACTICAL EXAM KIT LINKED BELOW BEFORE STARTING THE ONLINE EXAM - YOU NEED IT FOR PART 1 OF THE EXAM</mark></b></u></p>
 <p> Please click the name of the course you need the exam code for</p>
-    `
-            }
-            document.write(instructions)
-            // coursesArray.forEach(element => {
-            //     concat = `${element.course}/${element.ver}`;
-            //     // console.log(element.course);
-            //     // console.log(element.ver);
-            //     // download = `${element.course}${element.ver}19`
-            //     coursename1 = `Microsoft ${element.courseName} 2019 Level `
-            //     element.level.forEach(element => {
-            //         concatlevel = `${concat}/${element}`
-            //         link = `${dlRoot}${concatlevel}/${suffix}`
-            //         download = download + element
-            //         // aRef = `<a href="${link}" download="${download}_Practical_Exam_Kit.zip">${coursename1}${element}</a><br>`
-            //         aRef = `<a href="${link}">${coursename1}${element}</a><br>`
-            //         document.write(aRef)
-            //         console.log(concatlevel);
-            //     })
-            // });
+    `;
+          }
+          document.write(instructions);
+          // coursesArray.forEach(element => {
+          //     concat = `${element.course}/${element.ver}`;
+          //     // console.log(element.course);
+          //     // console.log(element.ver);
+          //     // download = `${element.course}${element.ver}19`
+          //     coursename1 = `Microsoft ${element.courseName} 2019 Level `
+          //     element.level.forEach(element => {
+          //         concatlevel = `${concat}/${element}`
+          //         link = `${dlRoot}${concatlevel}/${suffix}`
+          //         download = download + element
+          //         // aRef = `<a href="${link}" download="${download}_Practical_Exam_Kit.zip">${coursename1}${element}</a><br>`
+          //         aRef = `<a href="${link}">${coursename1}${element}</a><br>`
+          //         document.write(aRef)
+          //         console.log(concatlevel);
+          //     })
+          // });
 
-            let instructionsp2 = `
+          let instructionsp2 = `
             <p>When you are ready, the code to start the exam is in the EXAM_CODE.txt file in the kit linked above. Please copy and paste the code from the EXAM_CODE.txt file.</p>
 
             <h2>A reminder on the testing policy</h2>
             <ul>
             `;
-            // document.write(instructionsp2);
+          // document.write(instructionsp2);
 
-            // examPolicies.forEach(element => {
-            //     document.write(`<li>${element}</li>`)
-            // })
+          // examPolicies.forEach(element => {
+          //     document.write(`<li>${element}</li>`)
+          // })
 
-            // document.write(`If you have any issues completing the practical exam or accessing the online portions, please call us right away.
+          // document.write(`If you have any issues completing the practical exam or accessing the online portions, please call us right away.
 
-            // For best results, we recommend completing both portions at the campus. That way you can get immediate assistance by putting your question mark up.`)
+          // For best results, we recommend completing both portions at the campus. That way you can get immediate assistance by putting your question mark up.`)
+        </script>
+      </div>
+    </main>
 
-
-
-
-            </script>
-            </div>
-</main>
-
-<include src="./src/components/footer.htm"></include>
-</body>
-
+    <include src="./src/components/footer.htm"></include>
+  </body>
 </html>

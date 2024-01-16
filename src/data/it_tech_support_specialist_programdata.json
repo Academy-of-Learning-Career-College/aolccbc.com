@@ -1,102 +1,103 @@
 {
-    "admitreq": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "1. Graduated from grade 12 or equivalent (B.C. high school diploma, B.C. Adult Graduation Diploma, General Educational Development) or equivalent secondary school completion from another jurisdiction. 19 years of age or over at the start of your program OR"},
-            {
-                "style": "p",
-                "content": "2. Mature Student status (19 years of age or over at the start of your program) AND Pass the Academy of Learning Career College Entrance Evaluation with 75% or higher (demonstrating both English comprehension and math skills) OR"},
-            {
-                "style": "p",
-                "content": "3. Applicants who do not meet one of the requirements above must provide proof of English proficiency through an English language assessment (IELTS 5.5 or CELPIP 6)"}
-
-
-        ]
-    },
-    "programhighlights": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "In the IT Tech Support Specialist diploma program, students will learn to design, implement, manage, and maintain computers and network installations. The program covers a wide range of topics from hardware installation, configuration, networking to Windows operating systems, server administration, security tools and procedures, and cloud computing with Azure services."
-            },
-            {
-                "style": "p",
-                "content": "Throughout the program, students will gain experience with a wide range of hands-on practice labs exercises."
-            },
-            {
-                "style": "p",
-                "content": "The program helps students prepare for industry-standard certification examinations including Computing Technology Industry Association (CompTIA) A+, Network+, Server+, Security+, and Microsoft 365: Modern Desktop Administrator Associate, Microsoft Certified: Azure Fundamentals, and  Administrator Associate. "
-            }
-        ]
-    },
-    "careeropp": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Relevant job titles include: information technology support technician, technical support specialist - information technology, system support representative, technical support agent, technical support representative."
-            }
-        ]
-    },
-    "corecourses": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Upon completion of this program the successful student will have reliably demonstrated the ability to: "
-            },
-            {
-                "ul_start": "true"
-            },
-            {
-                "style": "li",
-                "li_title": "Operating Systems",
-                "content": "Learn to deploy, configure, manage devices and data with Windows 10"
-            },
-            {
-                "style": "li",
-                "li_title": "Word Processing",
-                "content": "Use MS Word core features to create, format, and edit documents, work with styles, and insert tables and images"
-            },
-            {
-                "style": "li",
-                "li_title": "Spreadsheets",
-                "content": "Use MS Excel core features to create and format worksheets, use functions, and create formulas "
-            },
-            {
-                "style": "li",
-                "li_title": "Database Management",
-                "content": "Use MS Access to build a database, create database tables and populate them, establish relationships between tables, create forms and reports, and how to run queries to retrieve data from databases "
-            },
-            {
-                "style": "li",
-                "li_title": "Prepare for CompTIA's A+ certification exams:",
-                "content": "Learn about PC hardware and peripherals, mobile device hardware, networking and troubleshooting hardware and network connectivity issues; learn to install and configure multiple operating systems, address security, the fundamentals of cloud computing, and operational procedures "
-            },
-            {
-                "style": "li",
-                "li_title":"Prepare for CompTIA's Network+ certification exam:",
-                "content": "Learn about configuring, troubleshooting, and managing common network wireless and wired devices, basic network design and connectivity, understand and maintain network documentation, identify network limitations and weaknesses, and implement network security, standards, and protocols "
-            },
-            {
-                "style": "li",
-                "li_title":"Prepare for CompTIA's Server+ certification exam:",
-                "content": "Learn about server administration concepts, virtualization and cloud computing, physical and network security, managing physical inventory and assets, server hardware, storage management, install and configure an OS, troubleshoot OS, application, and networks, manage data security and service and data availability, and decommission servers "
-            },
-            {
-                "style": "li",
-                "li_title":"Prepare for CompTIA's Security+ certification exam:",
-                "content": "Learn about security concepts, tools, and procedures to react to security incidents; it ensures that security personnel are anticipating security risks and guarding against them "
-            },
-            {
-                "style": "li",
-                "li_title":"Learn About Azure:",
-                "content": "Learn about cloud computing, managing Azure services, Azure storage, software development, security and compliance; learn to manage Azure DNS and network security, implement and manage storage, deploy and manage virtual machines, configure and manage virtual networks, and users "
-            },
-            {
-                "ul_end": "true"
-            }
-        ]
-    },
-    "salarystart": 37000,
-    "salaryend": 79000
+  "admitreq": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "1. Graduated from grade 12 or equivalent (B.C. high school diploma, B.C. Adult Graduation Diploma, General Educational Development) or equivalent secondary school completion from another jurisdiction. 19 years of age or over at the start of your program OR"
+      },
+      {
+        "style": "p",
+        "content": "2. Mature Student status (19 years of age or over at the start of your program) AND Pass the Academy of Learning Career College Entrance Evaluation with 75% or higher (demonstrating both English comprehension and math skills) OR"
+      },
+      {
+        "style": "p",
+        "content": "3. Applicants who do not meet one of the requirements above must provide proof of English proficiency through an English language assessment (IELTS 5.5 or CELPIP 6)"
+      }
+    ]
+  },
+  "programhighlights": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "In the IT Tech Support Specialist diploma program, students will learn to design, implement, manage, and maintain computers and network installations. The program covers a wide range of topics from hardware installation, configuration, networking to Windows operating systems, server administration, security tools and procedures, and cloud computing with Azure services."
+      },
+      {
+        "style": "p",
+        "content": "Throughout the program, students will gain experience with a wide range of hands-on practice labs exercises."
+      },
+      {
+        "style": "p",
+        "content": "The program helps students prepare for industry-standard certification examinations including Computing Technology Industry Association (CompTIA) A+, Network+, Server+, Security+, and Microsoft 365: Modern Desktop Administrator Associate, Microsoft Certified: Azure Fundamentals, and  Administrator Associate. "
+      }
+    ]
+  },
+  "careeropp": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Relevant job titles include: information technology support technician, technical support specialist - information technology, system support representative, technical support agent, technical support representative."
+      }
+    ]
+  },
+  "corecourses": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Upon completion of this program the successful student will have reliably demonstrated the ability to: "
+      },
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "li_title": "Operating Systems",
+        "content": "Learn to deploy, configure, manage devices and data with Windows 10"
+      },
+      {
+        "style": "li",
+        "li_title": "Word Processing",
+        "content": "Use MS Word core features to create, format, and edit documents, work with styles, and insert tables and images"
+      },
+      {
+        "style": "li",
+        "li_title": "Spreadsheets",
+        "content": "Use MS Excel core features to create and format worksheets, use functions, and create formulas "
+      },
+      {
+        "style": "li",
+        "li_title": "Database Management",
+        "content": "Use MS Access to build a database, create database tables and populate them, establish relationships between tables, create forms and reports, and how to run queries to retrieve data from databases "
+      },
+      {
+        "style": "li",
+        "li_title": "Prepare for CompTIA's A+ certification exams:",
+        "content": "Learn about PC hardware and peripherals, mobile device hardware, networking and troubleshooting hardware and network connectivity issues; learn to install and configure multiple operating systems, address security, the fundamentals of cloud computing, and operational procedures "
+      },
+      {
+        "style": "li",
+        "li_title": "Prepare for CompTIA's Network+ certification exam:",
+        "content": "Learn about configuring, troubleshooting, and managing common network wireless and wired devices, basic network design and connectivity, understand and maintain network documentation, identify network limitations and weaknesses, and implement network security, standards, and protocols "
+      },
+      {
+        "style": "li",
+        "li_title": "Prepare for CompTIA's Server+ certification exam:",
+        "content": "Learn about server administration concepts, virtualization and cloud computing, physical and network security, managing physical inventory and assets, server hardware, storage management, install and configure an OS, troubleshoot OS, application, and networks, manage data security and service and data availability, and decommission servers "
+      },
+      {
+        "style": "li",
+        "li_title": "Prepare for CompTIA's Security+ certification exam:",
+        "content": "Learn about security concepts, tools, and procedures to react to security incidents; it ensures that security personnel are anticipating security risks and guarding against them "
+      },
+      {
+        "style": "li",
+        "li_title": "Learn About Azure:",
+        "content": "Learn about cloud computing, managing Azure services, Azure storage, software development, security and compliance; learn to manage Azure DNS and network security, implement and manage storage, deploy and manage virtual machines, configure and manage virtual networks, and users "
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "salarystart": 37000,
+  "salaryend": 79000
 }

@@ -1,68 +1,126 @@
 {
-    "admitreq": {
-        "paragraphs": [{ "ul_start": "true" },
-            { "style": "li", "content": "Excellent communication and interpersonal skills, and a strong commitment to detail, confidentiality and integrity." },
-            { "style": "li", "content": "Completion of Grade 12 or equivalent, and meet the minimum provincial age requirement." },
-            { "style": "li", "content": "Successful completion of admissions interview and testing for adequate entry-level skills." },
-            { "style": "li", "content": "A clear and relevant Criminal Records Check." },
-            { "style": "li", "content": "A good command of the English language (written and oral)." },
-            { "style": "li", "content": "Good listening skills and tactful" },
-            { "style": "li", "content": "Ability to communicate verbally and in writing with people from all walks of life" },
-            { "style": "li", "content": "An adequate level of physical health to meet the requirements of the program and prospective employment." },
-            { "ul_end": "true" }
-        ]
-    },
-    "programhighlights": { "paragraphs": [{ "style": "p", "content": "With the aging population, the tremendous advancements in technology, and our demand for the best quality of life, the healthcare industry is facing a growing shortage of well-trained personnel. Throughout the North American healthcare industry, there is an acute need to increase the size of the workforce and raise the skill level of that workforce. This program is designed to provide employment-ready and comprehensively trained graduates. Successful graduates will earn theCertified Medical Assisting Professional (CMAP) designation in addition to their diploma. These graduates are fully qualified to work in a hands-on administrative and clinical support capacity in the medical industry." }] },
-    "careeropp": {
-        "paragraphs": [{ "style": "p", "content": "Graduates of this program are qualified to work in a wide variety of healthcare settings and occupations. Job titles vary per location, but graduates are an integral part of many healthcare settings, including:" },
-            { "ul_start": "true" },
-            { "style": "li", "content": "Physicians' offices, clinics, and mental healthcare and allied healthcare centres" },
-            { "style": "li", "content": "Walk-in care centres" },
-            { "style": "li", "content": "Ambulatory clinics" },
-            { "style": "li", "content": "Complementary and alternative medicine clinics (e.g., chiropractic and acupuncture centres)" },
-            { "style": "li", "content": "Long-term and extended care departments" },
-            { "style": "li", "content": "Medical research facilities" },
-            { "style": "li", "content": "Medical laboratory and diagnostic imaging centres" },
-            { "style": "li", "content": "Physiotherapy and occupational therapy clinics" },
-            { "style": "li", "content": "Group homes and community living societies" },
-            { "style": "li", "content": "Fitness and wellness centres" },
-            { "style": "li", "content": "Hospital admissions and E.R. departments (e.g., switchboard, information, and patient registration)" },
-            { "style": "li", "content": "Ambulatory and outpatient departments" },
-            { "style": "li", "content": "Laboratory and x-ray departments" },
-            { "style": "li", "content": "Medical finance and administrative departments" },
-            { "style": "li", "content": "Booking and O.R. bed booking" },
-            { "style": "li", "content": "Health records departments" },
-            { "ul_end": "true" }
-        ]
-    },
-    "corecourses": {
-        "paragraphs": [{ "ul_start": "true" },
-            { "style": "p", "content": "Part A: Computer and Business Office Skills" },
-            { "style": "li", "content": "Introduction to Keyboarding" },
-            { "style": "li", "content": "Keyboard Skill Building Levels 1 and 2" },
-            { "style": "li", "content": "Microsoft Windows Level 1" },
-            { "style": "li", "content": "Microsoft Word- Levels 1, 2, and 3" },
-            { "style": "li", "content": "Microsoft Excel- Level 1" },
-            { "style": "li", "content": "Microsoft Access- Level 1" },
-            { "style": "li", "content": "Microsoft Outlook- Level 1" },
-            { "style": "li", "content": "Basic Bookkeeping Level 1" },
-            { "style": "li", "content": "Practical Applications- 3 Units" },
-            { "style": "li", "content": "Thought Patterns For A Successful Career" },
-            { "style": "li", "content": "Job Search and Résumé Writing" },
-            { "style": "p", "content": "Part B: Medical Administrative / Clinical" },
-            { "style": "li", "content": "Introduction to Medical Terminology" },
-            { "style": "li", "content": "Anatomy and Physiology Part 1" },
-            { "style": "li", "content": "Anatomy and Physiology Part 2" },
-            { "style": "li", "content": "Medical Office Procedures" },
-            { "style": "li", "content": "Introduction to Medical Transcription" },
-            { "style": "li", "content": "Clinical Procedures" },
-            { "style": "li", "content": "Basic Rescuer (Level C) CPR Certification" },
-            { "style": "li", "content": "Standard First Aid" },
-            { "style": "p", "content": "Part C: Work Experience" },
-            { "style": "li", "content": "Preceptorship" },
-            { "ul_end": "true" }
-        ]
-    },
-    "salarystart": 25868,
-    "salaryend": 49668
+  "admitreq": {
+    "paragraphs": [
+      { "ul_start": "true" },
+      {
+        "style": "li",
+        "content": "Excellent communication and interpersonal skills, and a strong commitment to detail, confidentiality and integrity."
+      },
+      {
+        "style": "li",
+        "content": "Completion of Grade 12 or equivalent, and meet the minimum provincial age requirement."
+      },
+      {
+        "style": "li",
+        "content": "Successful completion of admissions interview and testing for adequate entry-level skills."
+      },
+      {
+        "style": "li",
+        "content": "A clear and relevant Criminal Records Check."
+      },
+      {
+        "style": "li",
+        "content": "A good command of the English language (written and oral)."
+      },
+      { "style": "li", "content": "Good listening skills and tactful" },
+      {
+        "style": "li",
+        "content": "Ability to communicate verbally and in writing with people from all walks of life"
+      },
+      {
+        "style": "li",
+        "content": "An adequate level of physical health to meet the requirements of the program and prospective employment."
+      },
+      { "ul_end": "true" }
+    ]
+  },
+  "programhighlights": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "With the aging population, the tremendous advancements in technology, and our demand for the best quality of life, the healthcare industry is facing a growing shortage of well-trained personnel. Throughout the North American healthcare industry, there is an acute need to increase the size of the workforce and raise the skill level of that workforce. This program is designed to provide employment-ready and comprehensively trained graduates. Successful graduates will earn theCertified Medical Assisting Professional (CMAP) designation in addition to their diploma. These graduates are fully qualified to work in a hands-on administrative and clinical support capacity in the medical industry."
+      }
+    ]
+  },
+  "careeropp": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Graduates of this program are qualified to work in a wide variety of healthcare settings and occupations. Job titles vary per location, but graduates are an integral part of many healthcare settings, including:"
+      },
+      { "ul_start": "true" },
+      {
+        "style": "li",
+        "content": "Physicians' offices, clinics, and mental healthcare and allied healthcare centres"
+      },
+      { "style": "li", "content": "Walk-in care centres" },
+      { "style": "li", "content": "Ambulatory clinics" },
+      {
+        "style": "li",
+        "content": "Complementary and alternative medicine clinics (e.g., chiropractic and acupuncture centres)"
+      },
+      { "style": "li", "content": "Long-term and extended care departments" },
+      { "style": "li", "content": "Medical research facilities" },
+      {
+        "style": "li",
+        "content": "Medical laboratory and diagnostic imaging centres"
+      },
+      {
+        "style": "li",
+        "content": "Physiotherapy and occupational therapy clinics"
+      },
+      {
+        "style": "li",
+        "content": "Group homes and community living societies"
+      },
+      { "style": "li", "content": "Fitness and wellness centres" },
+      {
+        "style": "li",
+        "content": "Hospital admissions and E.R. departments (e.g., switchboard, information, and patient registration)"
+      },
+      { "style": "li", "content": "Ambulatory and outpatient departments" },
+      { "style": "li", "content": "Laboratory and x-ray departments" },
+      {
+        "style": "li",
+        "content": "Medical finance and administrative departments"
+      },
+      { "style": "li", "content": "Booking and O.R. bed booking" },
+      { "style": "li", "content": "Health records departments" },
+      { "ul_end": "true" }
+    ]
+  },
+  "corecourses": {
+    "paragraphs": [
+      { "ul_start": "true" },
+      {
+        "style": "p",
+        "content": "Part A: Computer and Business Office Skills"
+      },
+      { "style": "li", "content": "Introduction to Keyboarding" },
+      { "style": "li", "content": "Keyboard Skill Building Levels 1 and 2" },
+      { "style": "li", "content": "Microsoft Windows Level 1" },
+      { "style": "li", "content": "Microsoft Word- Levels 1, 2, and 3" },
+      { "style": "li", "content": "Microsoft Excel- Level 1" },
+      { "style": "li", "content": "Microsoft Access- Level 1" },
+      { "style": "li", "content": "Microsoft Outlook- Level 1" },
+      { "style": "li", "content": "Basic Bookkeeping Level 1" },
+      { "style": "li", "content": "Practical Applications- 3 Units" },
+      { "style": "li", "content": "Thought Patterns For A Successful Career" },
+      { "style": "li", "content": "Job Search and Résumé Writing" },
+      { "style": "p", "content": "Part B: Medical Administrative / Clinical" },
+      { "style": "li", "content": "Introduction to Medical Terminology" },
+      { "style": "li", "content": "Anatomy and Physiology Part 1" },
+      { "style": "li", "content": "Anatomy and Physiology Part 2" },
+      { "style": "li", "content": "Medical Office Procedures" },
+      { "style": "li", "content": "Introduction to Medical Transcription" },
+      { "style": "li", "content": "Clinical Procedures" },
+      { "style": "li", "content": "Basic Rescuer (Level C) CPR Certification" },
+      { "style": "li", "content": "Standard First Aid" },
+      { "style": "p", "content": "Part C: Work Experience" },
+      { "style": "li", "content": "Preceptorship" },
+      { "ul_end": "true" }
+    ]
+  },
+  "salarystart": 25868,
+  "salaryend": 49668
 }

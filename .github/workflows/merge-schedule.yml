@@ -6,7 +6,7 @@ on:
       - edited
   schedule:
     # 0AM UTC
-    - cron: '*/15 * * * *'
+    - cron: "*/15 * * * *"
 
 jobs:
   merge_schedule:
@@ -14,9 +14,9 @@ jobs:
     steps:
       - uses: gr2m/merge-schedule-action@v2
         with:
-           time_zone: 'America/Vancouver'
-           merge_method: squash
-           require_statuses_success: 'true'
-           automerge_fail_label: 'merge-schedule-failed'
+          time_zone: "America/Vancouver"
+          merge_method: squash
+          require_statuses_success: "true"
+          automerge_fail_label: "merge-schedule-failed"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

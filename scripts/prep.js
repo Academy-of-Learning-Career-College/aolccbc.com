@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // Function to empty a folder
 function emptyFolder(folderPath) {
@@ -25,11 +25,7 @@ function emptyFolder(folderPath) {
 }
 
 // Specify the folders to be emptied
-const foldersToEmpty = [
-  './.parcel-cache',
-  './temp',
-  './www'
-];
+const foldersToEmpty = ["./.parcel-cache", "./temp", "./www"];
 
 // Empty each folder
 for (const folder of foldersToEmpty) {

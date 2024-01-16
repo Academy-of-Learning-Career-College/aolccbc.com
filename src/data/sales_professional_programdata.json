@@ -1,146 +1,146 @@
 {
-    "admitreq": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them. Part-time students may set their own schedules to a minimum of two training sessions per week. These times may be scheduled during the day, evenings, or on weekends."
-            }
-        ]
-    },
-    "programhighlights": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "With an ever-growing and competitive market, companies are constantly in need of highly professional and motivated salespeople who can be successful in any type of environment. The discerning Sales Professional understands that it is not so much what you do, but “how” you do it. Partnerships and relationships are established and maintained only when the Sales Professional provides exceptional customer value. Customers have fundamentally changed their expectations in recent years and desire to build a relationship with a Sales Professional who provides value, not just communicates it. This program is designed to provide students with the fundamental skills, knowledge, and attitudes required for success in an entry-level position. It will appeal to those individuals who are charismatic, energetic, strong communicators, driven by results, and willing to put themselves on the front line. This program provides students with:"
-            },
-            {
-                "ul_start": "true"
-            },
-            {
-                "style": "li",
-                "content": "The knowledge and skills necessary to manage relationships and key accounts."
-            },
-            {
-                "style": "li",
-                "content": "An understanding of the sales profession and the environments in which they will be selling."
-            },
-            {
-                "style": "li",
-                "content": "The opportunity to explore the consultative selling approach and various selling processes in depth."
-            },
-            {
-                "style": "li",
-                "content": "Professional skills to develop sale proposals and deliver effective sales presentations."
-            },
-            {
-                "style": "li",
-                "content": "The ability to assess their potential clients and adjust their personality style to successfully build rapport with each client."
-            },
-            {
-                "ul_end": "true"
-            }
-        ]
-    },
-    "careeropp": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Graduates of this program will find opportunities in a variety of companies that produce or provide goods and/or services. Careers that correspond with the skills learned in this program include:"
-            },
-            {
-                "ul_start": "true"
-            },
-            {
-                "style": "li",
-                "content": "Account Executive"
-            },
-            {
-                "style": "li",
-                "content": "Sales Agent"
-            },
-            {
-                "style": "li",
-                "content": "Broker"
-            },
-            {
-                "style": "li",
-                "content": "Exporter"
-            },
-            {
-                "style": "li",
-                "content": "Merchandiser"
-            },
-            {
-                "style": "li",
-                "content": "Sales Consultant"
-            },
-            {
-                "style": "li",
-                "content": "Salesperson"
-            },
-            {
-                "style": "li",
-                "content": "Sales Representative"
-            },
-            {
-                "ul_end": "true"
-            }
-        ]
-    },
-    "corecourses": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Upon completion of the program the participant must demonstrate the following core competencies:"
-            },
-            {
-                "ul_start": "true"
-            },
-            {
-                "style": "li",
-                "li_title": "Word Processing",
-                "content": "Basic level of proficiency in MicrosoftWord "
-            },
-            {
-                "style": "li",
-                "li_title": "Spreadsheets",
-                "content": "Basic level of proficiency in Microsoft Excel"
-            },
-            {
-                "style": "li",
-                "li_title": "Simulations and Drills",
-                "content": "Practical Applications - 1 Unit"
-            },
-            {
-                "style": "li",
-                "li_title": "Database Management",
-                "content": "Basic level of proficiency in Microsoft Access"
-            },
-            {
-                "style": "li",
-                "li_title": "Graphics/Presentation",
-                "content": "Basic level of proficiency in Microsoft PowerPoint"
-            },
-            {
-                "style": "li",
-                "li_title": "Office Skills",
-                "content": "Basic level of proficiency in Microsoft Outlook"
-            },
-            {
-                "style": "li",
-                "li_title": "Business Skills",
-                "content": "Customer Service, Grammar Essentials for Business Writing, Business Correspondence Levels 1 and 2, Business Essentials, BusinessMath, Marketing and Sales, Principles of Selling, Business Presentations, Business in the Digital Age, Business Law & Ethics, Business Negotiations and Contracts, Business Verbal Communication, and Professional Selling"
-            },
-            {
-                "style": "li",
-                "li_title": "Job Readiness/Employability Skills",
-                "content": "Job Search and Résumé Writing, Thought Patterns for a Successful Career, and Employment Success Strategies"
-            },
-            {
-                "ul_end": "true"
-            }
-        ]
-    },
-    "salarystart": 34434,
-    "salaryend": 84988
+  "admitreq": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them. Part-time students may set their own schedules to a minimum of two training sessions per week. These times may be scheduled during the day, evenings, or on weekends."
+      }
+    ]
+  },
+  "programhighlights": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "With an ever-growing and competitive market, companies are constantly in need of highly professional and motivated salespeople who can be successful in any type of environment. The discerning Sales Professional understands that it is not so much what you do, but “how” you do it. Partnerships and relationships are established and maintained only when the Sales Professional provides exceptional customer value. Customers have fundamentally changed their expectations in recent years and desire to build a relationship with a Sales Professional who provides value, not just communicates it. This program is designed to provide students with the fundamental skills, knowledge, and attitudes required for success in an entry-level position. It will appeal to those individuals who are charismatic, energetic, strong communicators, driven by results, and willing to put themselves on the front line. This program provides students with:"
+      },
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "content": "The knowledge and skills necessary to manage relationships and key accounts."
+      },
+      {
+        "style": "li",
+        "content": "An understanding of the sales profession and the environments in which they will be selling."
+      },
+      {
+        "style": "li",
+        "content": "The opportunity to explore the consultative selling approach and various selling processes in depth."
+      },
+      {
+        "style": "li",
+        "content": "Professional skills to develop sale proposals and deliver effective sales presentations."
+      },
+      {
+        "style": "li",
+        "content": "The ability to assess their potential clients and adjust their personality style to successfully build rapport with each client."
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "careeropp": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Graduates of this program will find opportunities in a variety of companies that produce or provide goods and/or services. Careers that correspond with the skills learned in this program include:"
+      },
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "content": "Account Executive"
+      },
+      {
+        "style": "li",
+        "content": "Sales Agent"
+      },
+      {
+        "style": "li",
+        "content": "Broker"
+      },
+      {
+        "style": "li",
+        "content": "Exporter"
+      },
+      {
+        "style": "li",
+        "content": "Merchandiser"
+      },
+      {
+        "style": "li",
+        "content": "Sales Consultant"
+      },
+      {
+        "style": "li",
+        "content": "Salesperson"
+      },
+      {
+        "style": "li",
+        "content": "Sales Representative"
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "corecourses": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Upon completion of the program the participant must demonstrate the following core competencies:"
+      },
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "li_title": "Word Processing",
+        "content": "Basic level of proficiency in MicrosoftWord "
+      },
+      {
+        "style": "li",
+        "li_title": "Spreadsheets",
+        "content": "Basic level of proficiency in Microsoft Excel"
+      },
+      {
+        "style": "li",
+        "li_title": "Simulations and Drills",
+        "content": "Practical Applications - 1 Unit"
+      },
+      {
+        "style": "li",
+        "li_title": "Database Management",
+        "content": "Basic level of proficiency in Microsoft Access"
+      },
+      {
+        "style": "li",
+        "li_title": "Graphics/Presentation",
+        "content": "Basic level of proficiency in Microsoft PowerPoint"
+      },
+      {
+        "style": "li",
+        "li_title": "Office Skills",
+        "content": "Basic level of proficiency in Microsoft Outlook"
+      },
+      {
+        "style": "li",
+        "li_title": "Business Skills",
+        "content": "Customer Service, Grammar Essentials for Business Writing, Business Correspondence Levels 1 and 2, Business Essentials, BusinessMath, Marketing and Sales, Principles of Selling, Business Presentations, Business in the Digital Age, Business Law & Ethics, Business Negotiations and Contracts, Business Verbal Communication, and Professional Selling"
+      },
+      {
+        "style": "li",
+        "li_title": "Job Readiness/Employability Skills",
+        "content": "Job Search and Résumé Writing, Thought Patterns for a Successful Career, and Employment Success Strategies"
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "salarystart": 34434,
+  "salaryend": 84988
 }

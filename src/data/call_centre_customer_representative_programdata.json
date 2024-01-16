@@ -1,89 +1,89 @@
 {
-    "admitreq": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instruction. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them."
-            }
-        ]
-    },
-    "programhighlights": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "This program offers individuals the opportunity to acquire the skills required by many companies that specialize in customer service and outbound marketing services and to provide skills to facilitate upward movement in their chosen profession. "
-            }
-        ]
-    },
-    "careeropp": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Graduates of this program have a varied choice of positions available to them ranging from Inbound/ Outbound marketing or Order Desk support, Reservations and Outbound Sales, to Team Leaders, Supervisors and eventually Managers of Call Centres."
-            }
-        ]
-    },
-    "corecourses": {
-        "paragraphs": [
-            {
-                "ul_start": "true"
-            },
-            {
-                "style": "li",
-                "li_title": "Keyboarding",
-                "content": "Minimum 25 words per minute (WPM)."
-            },
-            {
-                "style": "li",
-                "li_title": "Operating Systems",
-                "content": "Basic level of proficiency in a Windows operating system"
-            },
-            {
-                "style": "li",
-                "li_title": "Word Processing",
-                "content": "Intermediate level of proficiency in Microsoft Word"
-            },
-            {
-                "style": "li",
-                "li_title": "Spreadsheets",
-                "content": "Basic level of proficiency in Microsoft Excel"
-            },
-            {
-                "style": "li",
-                "li_title": "DataManagement",
-                "content": "Basic level of proficiency in Microsoft Access"
-            },
-            {
-                "style": "li",
-                "li_title": "Simulations and Drills",
-                "content": "Practical Applications - 1 Unit"
-            },
-            {
-                "style": "li",
-                "li_title": "Business Skills",
-                "content": "Grammar Essentials for Business Writing, Business Correspondence Level 1, Customer Service, and Workplace Success/Intrapreneurship"
-            },
-            {
-                "style": "li",
-                "li_title": "Help Desk & Call Centre Skills",
-                "content": "Call Centre Industry Overview, Team Dynamics and Personal Development, Call Centre Telephone Sales, Career Options and Opportunities, Call Centre Equipment and Technology, and Telephone Communication Skills"
-            },
-            {
-                "style": "li",
-                "li_title": "Office Skills",
-                "content": "Personal Computer Fundamentals for End Users, Internet Fundamentals, and basic level of proficiency in Microsoft Outlook"
-            },
-            {
-                "style": "li",
-                "li_title": "Employability Skills",
-                "content": "Job Search and Résumé Writing, and Thought Patterns for a Successful Career"
-            },
-            {
-                "ul_end": "true"
-            }
-        ]
-    },
-    "programtype": "Diploma",
-    "salarystart": 24506,
-    "salaryend": 47948
+  "admitreq": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instruction. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them."
+      }
+    ]
+  },
+  "programhighlights": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "This program offers individuals the opportunity to acquire the skills required by many companies that specialize in customer service and outbound marketing services and to provide skills to facilitate upward movement in their chosen profession. "
+      }
+    ]
+  },
+  "careeropp": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Graduates of this program have a varied choice of positions available to them ranging from Inbound/ Outbound marketing or Order Desk support, Reservations and Outbound Sales, to Team Leaders, Supervisors and eventually Managers of Call Centres."
+      }
+    ]
+  },
+  "corecourses": {
+    "paragraphs": [
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "li_title": "Keyboarding",
+        "content": "Minimum 25 words per minute (WPM)."
+      },
+      {
+        "style": "li",
+        "li_title": "Operating Systems",
+        "content": "Basic level of proficiency in a Windows operating system"
+      },
+      {
+        "style": "li",
+        "li_title": "Word Processing",
+        "content": "Intermediate level of proficiency in Microsoft Word"
+      },
+      {
+        "style": "li",
+        "li_title": "Spreadsheets",
+        "content": "Basic level of proficiency in Microsoft Excel"
+      },
+      {
+        "style": "li",
+        "li_title": "DataManagement",
+        "content": "Basic level of proficiency in Microsoft Access"
+      },
+      {
+        "style": "li",
+        "li_title": "Simulations and Drills",
+        "content": "Practical Applications - 1 Unit"
+      },
+      {
+        "style": "li",
+        "li_title": "Business Skills",
+        "content": "Grammar Essentials for Business Writing, Business Correspondence Level 1, Customer Service, and Workplace Success/Intrapreneurship"
+      },
+      {
+        "style": "li",
+        "li_title": "Help Desk & Call Centre Skills",
+        "content": "Call Centre Industry Overview, Team Dynamics and Personal Development, Call Centre Telephone Sales, Career Options and Opportunities, Call Centre Equipment and Technology, and Telephone Communication Skills"
+      },
+      {
+        "style": "li",
+        "li_title": "Office Skills",
+        "content": "Personal Computer Fundamentals for End Users, Internet Fundamentals, and basic level of proficiency in Microsoft Outlook"
+      },
+      {
+        "style": "li",
+        "li_title": "Employability Skills",
+        "content": "Job Search and Résumé Writing, and Thought Patterns for a Successful Career"
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "programtype": "Diploma",
+  "salarystart": 24506,
+  "salaryend": 47948
 }

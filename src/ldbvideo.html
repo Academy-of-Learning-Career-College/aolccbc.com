@@ -1,43 +1,55 @@
 <!DOCTYPE html lang="en">
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-      <meta charset="utf-8">
-
-    </head><include src="./src/components/head.htm">{
-        "title" : "LockDown Browser"
-
-        }
+    <include src="./src/components/head.htm"
+      >{ "title" : "LockDown Browser" }
     </include>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <include src="./src/components/navbar.htm"></include>
 
-<main>
-    <center>
-    <p>Welcome to Academy of Learning Career College.</p>
-    <p><a href="https://download.respondus.com/lockdown/download.php?id=281950612" target="_blank" rel="noopener noreferrer">Click Here</a> to download and install the Respondus LockDown browser</p>
-         After you install the lockdown browser, please watch the following videos on how you will access your exam after installing and launching the LockDown Browser.</p>
+    <main>
+      <center>
+        <p>Welcome to Academy of Learning Career College.</p>
+        <p>
+          <a
+            href="https://download.respondus.com/lockdown/download.php?id=281950612"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Click Here</a
+          >
+          to download and install the Respondus LockDown browser
+        </p>
+        <p>
+          After you install the lockdown browser, please watch the following
+          videos on how you will access your exam after installing and launching
+          the LockDown Browser.
+        </p>
 
         <video width="800" height="600" controls>
-            <source src="https://video.aolccbc.com/ldblogin.mp4" type="video/mp4">
-            <source src="https://video.aolccbc.com/ldblogin.webm" type="video/webm">
+          <source
+            src="https://video.aolccbc.com/ldblogin.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://video.aolccbc.com/ldblogin.webm"
+            type="video/webm"
+          />
 
           Your browser does not support the video tag.
-          </video>
-
-</center>
-</main>
-
+        </video>
+      </center>
+    </main>
 
     <include src="./src/components/footer.htm"></include>
 
     <script>
-        let linkymclinky =  generateLink(window.location.search.substring(1));
-        document.getElementById("linky").innerHTML = `<h1>NOTICE: Once you have watched the above videos, please click here to access --> <a href="${linkymclinky}" target="_blank" rel="noopener noreferrer">Enriched Academy</a></h1><p>You may also want to drag this link to your your bookmarks bar.</p>`;
+      let linkymclinky = generateLink(window.location.search.substring(1));
+      document.getElementById("linky").innerHTML =
+        `<h1>NOTICE: Once you have watched the above videos, please click here to access --> <a href="${linkymclinky}" target="_blank" rel="noopener noreferrer">Enriched Academy</a></h1><p>You may also want to drag this link to your your bookmarks bar.</p>`;
     </script>
-</body>
-
+  </body>
 </html>

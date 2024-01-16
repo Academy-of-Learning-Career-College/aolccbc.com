@@ -1,44 +1,34 @@
-<!DOCTYPE html >
-<html lang='en'>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <include src="./src/components/head.htm">{'title' : 'Programs'}</include>
 
-<head>
-    <meta charset='utf-8'>
-    <include src='./src/components/head.htm'>{'title' : 'Programs'}</include>
-    
-    <link rel='stylesheet' href='~/css/programs.css'>
+    <link rel="stylesheet" href="~/css/programs.css" />
+  </head>
 
-</head>
-
-<body>
-    <include src='./src/components/navbar.htm'></include>
+  <body>
+    <include src="./src/components/navbar.htm"></include>
     <main>
-    <div class='container' id='maincontent'>
+      <div class="container" id="maincontent">
         <h2>Programs</h2>
-        <div id='myslidesbtnContainer'>
-            <include src='./src/components/program_cats.htm'></include>
+        <div id="myslidesbtnContainer">
+          <include src="./src/components/program_cats.htm"></include>
         </div>
 
         <!--Gallery Grid-->
-        <div class='row'>
-            <div id='slides' class='row'></div>
-                <include src='./src/components/slides.htm'></include>
+        <div class="row">
+          <div id="slides" class="row"></div>
+          <include src="./src/components/slides.htm"></include>
         </div>
+      </div>
+      <!-- <div id='programoverlay' class='overlay closed'></div> -->
+    </main>
+    <include src="./src/components/promisebar.htm"></include>
+    <include src="./src/components/footer.htm"></include>
+  </body>
 
-
-    </div>
-    <!-- <div id='programoverlay' class='overlay closed'></div> -->
-</main>
-    <include src='./src/components/promisebar.htm'></include>
-    <include src='./src/components/footer.htm'></include>
-    </div>
-    </div>
-
-    
-    
-
-</body>
-
-<!-- <script src='~/js/buildoverlay.js'></script>
+  <!-- <script src='~/js/buildoverlay.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js' integrity='sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
 <script src='~/js/parsecsv.js'></script>
 <script src='~/js/getData.js'></script>
@@ -51,22 +41,23 @@
 <script src='~/js/emptyElementByID.js'></script>
 <script src='~/js/filterSelection.js'></script>
 <script src='~/js/w3RemoveClass.js'></script>-->
-<script src='~/js/programs_js.js'></script>
-<script>
+  <script src="~/js/programs_js.js"></script>
+  <script>
+    let filter =
+      new URLSearchParams(window.location.search).get("category") || "all";
 
-let filter = new URLSearchParams(window.location.search).get("category") || 'all';
+    filterSelection(filter); // Execute the function and show all columns
 
-filterSelection(filter) // Execute the function and show all columns
+    var slidesbtnContainer =
+      document.getElementById("myslidesbtnContainer") || "";
 
-var slidesbtnContainer = document.getElementById('myslidesbtnContainer') || '';
-
-var slidesbtns = slidesbtnContainer.querySelectorAll('.slidesbtn.active');
-slidesbtns.forEach(function(btn) {
- btn.addEventListener('click', function() {
-   let current = document.querySelector('.active');
-   current.classList.remove('active');
-   this.classList.add('active');
- });
-});
-</script>
-
+    var slidesbtns = slidesbtnContainer.querySelectorAll(".slidesbtn.active");
+    slidesbtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        let current = document.querySelector(".active");
+        current.classList.remove("active");
+        this.classList.add("active");
+      });
+    });
+  </script>
+</html>

@@ -1,20 +1,26 @@
+from urllib.parse import urljoin, urlparse
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urlparse, urljoin
 
 # Set the starting URL
-base_url = "127.0.0.1:1234"
+base_url = "http://127.0.0.1:1234"  # Ensure you're using http:// or https://
 
 # Initialize a set to store visited URLs
 visited_urls = set()
+
 
 # Define a function to crawl a URL and check for dead links
 def crawl(url):
     # Add the URL to the visited set
     visited_urls.add(url)
 
-    # Send a GET request to the URL
-    response = requests.get(url)
+    try:
+        # Send a GET request to the URL with a timeout
+        response = requests.get(url, timeout=5)
+    except requests.RequestException as e:
+        print(f"Request failed: {e} - {url}")
+        return
 
     # Check if the response was successful
     if response.status_code != 200:
@@ -39,6 +45,7 @@ def crawl(url):
                 # Check if the URL has already been visited
                 if full_url not in visited_urls:
                     crawl(full_url)
+
 
 # Start crawling from the base URL
 crawl(base_url)

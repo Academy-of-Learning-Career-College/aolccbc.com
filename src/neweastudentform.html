@@ -1,71 +1,93 @@
 <!DOCTYPE html lang="en">
 <html lang="en">
-
-<head>
-      <meta charset="utf-8">
-    <include src="./src/components/head.htm">{
-        "title" : "Welcome to Enriched Academy"
-
-        }
+  <head>
+    <meta charset="utf-8" />
+    <include src="./src/components/head.htm"
+      >{ "title" : "Welcome to Enriched Academy" }
     </include>
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <include src="./src/components/navbar.htm"></include>
-    
+
     <main class="center">
-        
-        <script src="/js/generateealink.js"></script>
-        
-        <center>
-        <p>Please enter the student's first name, last name and email. The email will generate as you update the fields. Click the email text to copy the HTML code to your clipboard. Then, compose an email to the student in Campus Login, click on the Source button, then paste the code into the top of the email. Click Source again to see the result and then you can send the email to the student. This will be tracked in Campus Login, including whether they clicked the link to view their customized Orientation page. Once they click the link on the Orientation page, they will be enrolled.</p>
-<form onchange="generateEmail();">
-<table>
-    
-    <tr>
-        <td>Campus</td>
-        <td><select title="Campus" id="campus">
-            <option value="langley">Langley</option>
-            <option value="abbotsford" selected>Abbotsford</option>
+      <script src="/js/generateealink.js"></script>
 
-        </select>
+      <center>
+        <p>
+          Please enter the student's first name, last name and email. The email
+          will generate as you update the fields. Click the email text to copy
+          the HTML code to your clipboard. Then, compose an email to the student
+          in Campus Login, click on the Source button, then paste the code into
+          the top of the email. Click Source again to see the result and then
+          you can send the email to the student. This will be tracked in Campus
+          Login, including whether they clicked the link to view their
+          customized Orientation page. Once they click the link on the
+          Orientation page, they will be enrolled.
+        </p>
+        <form onchange="generateEmail();">
+          <table>
+            <tr>
+              <td>Campus</td>
+              <td>
+                <select title="Campus" id="campus">
+                  <option value="langley">Langley</option>
+                  <option value="abbotsford" selected>Abbotsford</option>
+                </select>
+              </td>
+            </tr>
 
-        </td>
+            <tr>
+              <td>First Name</td>
+            </tr>
 
-    </tr>
-
-    <tr>
-        <td>First Name</td>
-<tr>
-        <td><label for="fname">First Name:</label></td>
-        <td><input type="text" name="fname" id="fname" placeholder="Enter your first name"> </td>
-    </tr>
-    <tr>
-        <td><label for="lname">Last Name:</label></td>
-        <td><input type="text" name="lname" id="lname" placeholder="Enter your last name"> </td>
-    </tr>
-    <tr>
-        <td><label for="email">Email:</label></td>
-        <td><input type="email" name="email" id="email" placeholder="Enter student's email address"> </td>
-    </tr>
-    <!-- <tr>
+            <tr>
+              <td><label for="fname">First Name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Enter your first name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="lname">Last Name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Enter your last name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter student's email address"
+                />
+              </td>
+            </tr>
+            <!-- <tr>
         
         <td colspan="2"><button style="width:100%;text-align:center;" type="submit" onclick="generateEmail()">Go</button></td>
     </tr> -->
-    <tr>
-        <td colspan="2" onclick="copyEmailContentToClipboard()"><div id="emailcontent"></div></td>
-    </tr>
-    
-</table>
-</form>
-</center>
-</main>
-
+            <tr>
+              <td colspan="2" onclick="copyEmailContentToClipboard()">
+                <div id="emailcontent"></div>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </center>
+    </main>
 
     <include src="./src/components/footer.htm"></include>
-
-
-</body>
-
+  </body>
 </html>

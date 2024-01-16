@@ -1,7 +1,6 @@
 {
-    "quality": 50,
-    "webp": {
-        "nearLossless": false
-      }
+  "quality": 50,
+  "webp": {
+    "nearLossless": false
   }
-
+}

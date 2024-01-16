@@ -1,120 +1,119 @@
 {
-    "admitreq": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. Applicants whose first language is not English must provide proof of English proficiency."
-            },
-            {
-                "style": "p",
-                "content": "An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program."
-            },
-            {
-                "style": "p",
-                "content": "Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them."
-            }
-        ]
-    },
-    "programhighlights": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "In the Web Developer diploma program, students learn the coding languages required to be a front-end web developer and create dynamic websites. The program covers the primary and in-demand web development programming languages: HTML, CSS, and JavaScript."
-            },
-            {
-                "style": "p",
-                "content": "Throughout the program, students gain hands-on experience with a range of web development projects that build in complexity as students add coding languages and technology skills to their toolkit."
-            }
-            ,
-            {
-                "style": "p",
-                "content": "Graduates of the program will be able to:"
-            },
-            {
-                "ul_start" :"true"
-            },
-            {
-                "style" :"li",
-                "content" : "Design the appearance and layout of websites"
-            },
-            {
-                "style" :"li",
-                "content" : "Develop cross-browser and cross-platform websites"
-            },
-            {
-                "style" :"li",
-                "content" : "Create and optimize content for websites using graphics, animations, and other software"
-            },
-            {
-                "style" :"li",
-                "content" : "Translate wire frames and storyboards into functional, responsive websites"
-            },
-            {
-                "ul_end" :"true"
-            }
-        ]
-    },
-    "careeropp": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Graduates of the program may pursue a variety of positions in web development, including web developer, UI/UX developer, front end web developer, HTML / CSS developer, and JavaScript / jQuery developer. "
-            }
-        ]
-    },
-    "corecourses": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Upon completion of the program the participant must demonstrate the following core competencies:"
-            },
-            {
-                "ul_start": "true"
-            },
-            {
-                "style": "li",
-                "li_title": "Keyboarding",
-                "content": "Minimum 25 words per minute (WPM)."
-            },
-            {
-                "style": "li",
-                "li_title": "Operating Systems",
-                "content": "Intermediate level of proficiency in a Windows operating system"
-            },
-            {
-                "style": "li",
-                "li_title": "Software Development Industry",
-                "content": "Computer and Technology Basics for Developers, Overview of Software Development"
-            },
-            {
-                "style": "li",
-                "li_title": "Software and Web Development Skills",
-                "content": "Version Control, HTML, CSS and Bootstrap, JavaScript"
-            },
-            {
-                "style": "li",
-                "li_title": "Database Skills",
-                "content": "Basic level of proficiency in Microsoft Access"
-            },
-            {
-                "style": "li",
-                "li_title": "Word Processing and Spreadsheets",
-                "content": "Basic level of proficiency in Microsoft Word and Microsoft Excel"
-            },
-            {
-                "style": "li",
-                "li_title": "Office Skills",
-                "content": "Personal Computer Fundamentals, basic level of proficiency in Microsoft Outlook and Internet Fundamentals"
-            },
-            {
-                "style": "li",
-                "li_title": "Customer Service, Project Management"
-            },
-            {
-                "ul_end": "true"
-            }
-        ]
-    },
-    "salarystart": 36400,
-    "salaryend": 90000
+  "admitreq": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. Applicants whose first language is not English must provide proof of English proficiency."
+      },
+      {
+        "style": "p",
+        "content": "An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program."
+      },
+      {
+        "style": "p",
+        "content": "Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them."
+      }
+    ]
+  },
+  "programhighlights": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "In the Web Developer diploma program, students learn the coding languages required to be a front-end web developer and create dynamic websites. The program covers the primary and in-demand web development programming languages: HTML, CSS, and JavaScript."
+      },
+      {
+        "style": "p",
+        "content": "Throughout the program, students gain hands-on experience with a range of web development projects that build in complexity as students add coding languages and technology skills to their toolkit."
+      },
+      {
+        "style": "p",
+        "content": "Graduates of the program will be able to:"
+      },
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "content": "Design the appearance and layout of websites"
+      },
+      {
+        "style": "li",
+        "content": "Develop cross-browser and cross-platform websites"
+      },
+      {
+        "style": "li",
+        "content": "Create and optimize content for websites using graphics, animations, and other software"
+      },
+      {
+        "style": "li",
+        "content": "Translate wire frames and storyboards into functional, responsive websites"
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "careeropp": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Graduates of the program may pursue a variety of positions in web development, including web developer, UI/UX developer, front end web developer, HTML / CSS developer, and JavaScript / jQuery developer. "
+      }
+    ]
+  },
+  "corecourses": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Upon completion of the program the participant must demonstrate the following core competencies:"
+      },
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "li_title": "Keyboarding",
+        "content": "Minimum 25 words per minute (WPM)."
+      },
+      {
+        "style": "li",
+        "li_title": "Operating Systems",
+        "content": "Intermediate level of proficiency in a Windows operating system"
+      },
+      {
+        "style": "li",
+        "li_title": "Software Development Industry",
+        "content": "Computer and Technology Basics for Developers, Overview of Software Development"
+      },
+      {
+        "style": "li",
+        "li_title": "Software and Web Development Skills",
+        "content": "Version Control, HTML, CSS and Bootstrap, JavaScript"
+      },
+      {
+        "style": "li",
+        "li_title": "Database Skills",
+        "content": "Basic level of proficiency in Microsoft Access"
+      },
+      {
+        "style": "li",
+        "li_title": "Word Processing and Spreadsheets",
+        "content": "Basic level of proficiency in Microsoft Word and Microsoft Excel"
+      },
+      {
+        "style": "li",
+        "li_title": "Office Skills",
+        "content": "Personal Computer Fundamentals, basic level of proficiency in Microsoft Outlook and Internet Fundamentals"
+      },
+      {
+        "style": "li",
+        "li_title": "Customer Service, Project Management"
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "salarystart": 36400,
+  "salaryend": 90000
 }

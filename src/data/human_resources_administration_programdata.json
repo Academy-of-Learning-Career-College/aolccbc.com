@@ -1,87 +1,87 @@
 {
-    "admitreq": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them."
-            }
-        ]
-    },
-    "programhighlights": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Human Resource Administrators hold a strategic place in every progressive organization. The Human Resources Administration Certificate provides students a foundation in this high-demand business field. The program provides students with comprehensive knowledge of current office and business skills including proficiency in Human Resource Management, Business Law & Ethics, Microsoft applications and accounting."
-            }
-        ]
-    },
-    "careeropp": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Graduates of this program are prepared for a variety of entry-level roles in the Human Resources department, such as: human resources assistant, personnel assistant, staffing assistant, training clerk, employment clerk, and labour relations clerk. Upward mobility in these roles is feasible with experience, motivation, dedication, and a positive attitude."
-            }
-        ]
-    },
-    "corecourses": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Upon completion of the program the participant must demonstrate the following core competencies: "
-            },
-            {
-                "ul_start": "true"
-            },
-            {
-                "style": "li",
-                "li_title": "Keyboarding",
-                "content": "Minimum 40 words per minute (WPM)."
-            },
-            {
-                "style": "li",
-                "li_title": "Operating Systems",
-                "content": "Basic level of proficiency in a Windows operating system"
-            },
-            {
-                "style": "li",
-                "li_title": "Word Processing",
-                "content": "Intermediate level of proficiency in Microsoft Word"
-            },
-            {
-                "style": "li",
-                "li_title": "Spreadsheets",
-                "content": "Basic level of proficiency in Microsoft Excel"
-            },
-            {
-                "style": "li",
-                "li_title": "Database Management",
-                "content": "Basic level of proficiency in Microsoft Access"
-            },
-            {
-                "style": "li",
-                "li_title": "Business Skills",
-                "content": "Grammar Essentials for Business Writing, Business Correspondence Level 1, Human Resources Management, Business Law & Ethics, Business Verbal Communication, and Workplace Success/Intrapreneurship"
-            },
-            {
-                "style": "li",
-                "li_title": "Office Skills",
-                "content": "Basic level of proficiency in Microsoft Outlook and Office Procedures Level 1"
-            },
-            {
-                "style": "li",
-                "li_title": "Accounting",
-                "content": "Payroll Compliance Legislation"
-            },
-            {
-                "style": "li",
-                "li_title": "Job Readiness/EmployabilitySkills",
-                "content": "Job Search and Resume Writing"
-            },
-            {
-                "ul_end": "true"
-            }
-        ]
-    },
-    "salarystart": 33815,
-    "salaryend": 55755
+  "admitreq": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instructions. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them."
+      }
+    ]
+  },
+  "programhighlights": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Human Resource Administrators hold a strategic place in every progressive organization. The Human Resources Administration Certificate provides students a foundation in this high-demand business field. The program provides students with comprehensive knowledge of current office and business skills including proficiency in Human Resource Management, Business Law & Ethics, Microsoft applications and accounting."
+      }
+    ]
+  },
+  "careeropp": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Graduates of this program are prepared for a variety of entry-level roles in the Human Resources department, such as: human resources assistant, personnel assistant, staffing assistant, training clerk, employment clerk, and labour relations clerk. Upward mobility in these roles is feasible with experience, motivation, dedication, and a positive attitude."
+      }
+    ]
+  },
+  "corecourses": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Upon completion of the program the participant must demonstrate the following core competencies: "
+      },
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "li_title": "Keyboarding",
+        "content": "Minimum 40 words per minute (WPM)."
+      },
+      {
+        "style": "li",
+        "li_title": "Operating Systems",
+        "content": "Basic level of proficiency in a Windows operating system"
+      },
+      {
+        "style": "li",
+        "li_title": "Word Processing",
+        "content": "Intermediate level of proficiency in Microsoft Word"
+      },
+      {
+        "style": "li",
+        "li_title": "Spreadsheets",
+        "content": "Basic level of proficiency in Microsoft Excel"
+      },
+      {
+        "style": "li",
+        "li_title": "Database Management",
+        "content": "Basic level of proficiency in Microsoft Access"
+      },
+      {
+        "style": "li",
+        "li_title": "Business Skills",
+        "content": "Grammar Essentials for Business Writing, Business Correspondence Level 1, Human Resources Management, Business Law & Ethics, Business Verbal Communication, and Workplace Success/Intrapreneurship"
+      },
+      {
+        "style": "li",
+        "li_title": "Office Skills",
+        "content": "Basic level of proficiency in Microsoft Outlook and Office Procedures Level 1"
+      },
+      {
+        "style": "li",
+        "li_title": "Accounting",
+        "content": "Payroll Compliance Legislation"
+      },
+      {
+        "style": "li",
+        "li_title": "Job Readiness/EmployabilitySkills",
+        "content": "Job Search and Resume Writing"
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "salarystart": 33815,
+  "salaryend": 55755
 }

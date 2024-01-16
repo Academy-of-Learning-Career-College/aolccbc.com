@@ -1,38 +1,49 @@
 <!DOCTYPE html lang="en">
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-      <meta charset="utf-8">
-      
-    </head><include src="./src/components/head.htm">{
-        "title" : "Welcome to Enriched Academy"
-
-        }
+    <include src="./src/components/head.htm"
+      >{ "title" : "Welcome to Enriched Academy" }
     </include>
     <script src="/js/generateealink.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <include src="./src/components/navbar.htm"></include>
 
-<main>
-    <center>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/j-u2BlMjDu4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen; payment; microphone; camera" allowfullscreen></iframe>
-    <br />
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/saf7ubl0AEo?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <main>
+      <center>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/j-u2BlMjDu4?rel=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen; payment; microphone; camera"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/saf7ubl0AEo?rel=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
 
-
-    <p id="linky"></p>
-</center>
-</main>
-
+        <p id="linky"></p>
+      </center>
+    </main>
 
     <include src="./src/components/footer.htm"></include>
 
     <script>
-        let linkymclinky =  generateLink(window.location.search.substring(1));
-        document.getElementById("linky").innerHTML = `<h1>NOTICE: Once you have watched the above videos, please click here to access --> <a href="${linkymclinky}" target="_blank" rel="noopener noreferrer">Enriched Academy</a></h1><p>You may also want to drag this link to your your bookmarks bar.</p>`;
+      let linkymclinky = generateLink(window.location.search.substring(1));
+      document.getElementById("linky").innerHTML =
+        `<h1>NOTICE: Once you have watched the above videos, please click here to access --> <a href="${linkymclinky}" target="_blank" rel="noopener noreferrer">Enriched Academy</a></h1><p>You may also want to drag this link to your your bookmarks bar.</p>`;
     </script>
-</body>
-
+  </body>
 </html>

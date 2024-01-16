@@ -1,93 +1,93 @@
 {
-    "admitreq": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instruction. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them. Part-time students may set their own schedules to a minimum of two training sessions per week. These times may be scheduled during the day, evenings, or on weekends."
-            }
-        ]
-    },
-    "programhighlights": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "This program prepares students to enter and progress in the field of Entrepreneurial Business Applications. Upon graduation, the student will have the knowledge to meet the challenges of today's highly competitive world with the skills required by employers or to operate their own small business. "
-            }
-        ]
-    },
-    "careeropp": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instruction. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them. Part-time students may set their own schedules to a minimum of two training sessions per week. These times may be scheduled during the day, evenings, or on weekends."
-            }
-        ]
-    },
-    "corecourses": {
-        "paragraphs": [
-            {
-                "ul_start": "true"
-            },
-            {
-                "style": "li",
-                "li_title": "Keyboarding",
-                "content": "Minimum 10 words per minute (WPM)."
-            },
-            {
-                "style": "li",
-                "li_title": "Operating Systems",
-                "content": "Advanced level of proficiency in a Windows operating system"
-            },
-            {
-                "style": "li",
-                "li_title": "Word Processing",
-                "content": "Intermediate level of proficiency in Microsoft Word"
-            },
-            {
-                "style": "li",
-                "li_title": "Spreadsheets",
-                "content": "Intermediate level of proficiency in Microsoft Excel"
-            },
-            {
-                "style": "li",
-                "li_title": "Graphics/Presentation",
-                "content": "Basic level of proficiency in Microsoft PowerPoint and Microsoft Publisher"
-            },
-            {
-                "style": "li",
-                "li_title": "Data Management",
-                "content": "Basic level of proficiency in Microsoft Access"
-            },
-            {
-                "style": "li",
-                "li_title": "Accounting",
-                "content": "Sage 50 Premium Accounting"
-            },
-            {
-                "style": "li",
-                "li_title": "Simulations and Drills",
-                "content": "Practical Applications - 3 Units"
-            },
-            {
-                "style": "li",
-                "li_title": "Office Skills",
-                "content": "PersonalComputer Fundamentals for End Users, Internet Fundamentals, Basic Bookkeeping Levels 1 and 2, and basic level of proficiency in Microsoft Outlook"
-            },
-            {
-                "style": "li",
-                "li_title": "Business Skills",
-                "content": "Customer Service, marketing and Sales,Grammar Essentials for Business Writing, Business Correspondence Levels 1 and 2, Business Planning, Management Fundamentals, and Business Math"
-            },
-            {
-                "style": "li",
-                "li_title": "Job Readiness/Employability Skills",
-                "content": "Thought Patterns For A Successful Career"
-            },
-            {
-                "ul_end": "true"
-            }
-        ]
-    },
-    "salarystart": 37442,
-    "salaryend": 71079
+  "admitreq": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instruction. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them. Part-time students may set their own schedules to a minimum of two training sessions per week. These times may be scheduled during the day, evenings, or on weekends."
+      }
+    ]
+  },
+  "programhighlights": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "This program prepares students to enter and progress in the field of Entrepreneurial Business Applications. Upon graduation, the student will have the knowledge to meet the challenges of today's highly competitive world with the skills required by employers or to operate their own small business. "
+      }
+    ]
+  },
+  "careeropp": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Grade 12 or equivalent or Mature Student Status. Courses are open to any applicant who possesses a good command of the English language and is able to follow instruction. An admissions interview will be administered to determine if the applicant has the required interest, motivation, and entry-level skills to take this program. Full-time students must attend the required hours per week as per the course schedule and may do so at times convenient to them. Part-time students may set their own schedules to a minimum of two training sessions per week. These times may be scheduled during the day, evenings, or on weekends."
+      }
+    ]
+  },
+  "corecourses": {
+    "paragraphs": [
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "li_title": "Keyboarding",
+        "content": "Minimum 10 words per minute (WPM)."
+      },
+      {
+        "style": "li",
+        "li_title": "Operating Systems",
+        "content": "Advanced level of proficiency in a Windows operating system"
+      },
+      {
+        "style": "li",
+        "li_title": "Word Processing",
+        "content": "Intermediate level of proficiency in Microsoft Word"
+      },
+      {
+        "style": "li",
+        "li_title": "Spreadsheets",
+        "content": "Intermediate level of proficiency in Microsoft Excel"
+      },
+      {
+        "style": "li",
+        "li_title": "Graphics/Presentation",
+        "content": "Basic level of proficiency in Microsoft PowerPoint and Microsoft Publisher"
+      },
+      {
+        "style": "li",
+        "li_title": "Data Management",
+        "content": "Basic level of proficiency in Microsoft Access"
+      },
+      {
+        "style": "li",
+        "li_title": "Accounting",
+        "content": "Sage 50 Premium Accounting"
+      },
+      {
+        "style": "li",
+        "li_title": "Simulations and Drills",
+        "content": "Practical Applications - 3 Units"
+      },
+      {
+        "style": "li",
+        "li_title": "Office Skills",
+        "content": "PersonalComputer Fundamentals for End Users, Internet Fundamentals, Basic Bookkeeping Levels 1 and 2, and basic level of proficiency in Microsoft Outlook"
+      },
+      {
+        "style": "li",
+        "li_title": "Business Skills",
+        "content": "Customer Service, marketing and Sales,Grammar Essentials for Business Writing, Business Correspondence Levels 1 and 2, Business Planning, Management Fundamentals, and Business Math"
+      },
+      {
+        "style": "li",
+        "li_title": "Job Readiness/Employability Skills",
+        "content": "Thought Patterns For A Successful Career"
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "salarystart": 37442,
+  "salaryend": 71079
 }

@@ -1,100 +1,134 @@
 <!DOCTYPE html lang="en">
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <include src="./src/components/head.htm"> { "title": "Home" } </include>
+  </head>
 
-<head>
- <meta charset="utf-8">
- <include src="./src/components/head.htm">
-     {
-     "title": "Home"
-     }
- </include>
-</head>
+  <body>
+    <include src="./src/components/navbar.htm"></include>
 
-<body>
- <include src="./src/components/navbar.htm"></include>
+    <main>
+      <style type="text/css">
+        body {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          line-height: 1.5;
+          color: #333;
+          margin: 0;
+          padding: 0;
+        }
 
- <main>
-     <style type="text/css">
-         body {
-             font-family: Arial, sans-serif;
-             font-size: 16px;
-             line-height: 1.5;
-             color: #333;
-             margin: 0;
-             padding: 0;
-         }
+        h1 {
+          font-size: 28px;
+          color: #0072c6;
+          text-align: center;
+          margin: 20px 0;
+        }
 
-         h1 {
-             font-size: 28px;
-             color: #0072C6;
-             text-align: center;
-             margin: 20px 0;
-         }
+        h2 {
+          font-size: 22px;
+          color: #a9cd40;
+          margin-top: 40px;
+          margin-bottom: 10px;
+        }
 
-         h2 {
-             font-size: 22px;
-             color: #a9cd40;
-             margin-top: 40px;
-             margin-bottom: 10px;
-         }
+        p {
+          margin: 20px 0;
+        }
 
-         p {
-             margin: 20px 0;
-         }
-
-         ul {
-             list-style: disc;
-             margin-left: 20px;
-         }
-         #instructions, #kits, #acs {
-            display: none;
-         }
-     </style>
-     <div class="container" id="maincontent">
+        ul {
+          list-style: disc;
+          margin-left: 20px;
+        }
+        #instructions,
+        #kits,
+        #acs {
+          display: none;
+        }
+      </style>
+      <div class="container" id="maincontent">
         <p>As requested, here is the practical exam kit</p>
-         <p ><b><u><mark>
-         IMPORTANT: PLEASE COMPLETE THE PRACTICAL EXAM KIT LINKED BELOW BEFORE STARTING THE ONLINE EXAM - YOU NEED IT FOR PART 1 OF THE EXAM</mark></b></u></p>
-         <p> Please click the name of the course you need the exam code for</p>
-         <div>
-            <form method="get" id="kitform">
-                <label for="kit">Select an option:</label>
-                <select id="kit" name="kit">
-                </select>
-                <br><br>
-                <input type="submit" value="Submit">
-                <input type="button" value="Reset" onClick="window.location = window.location.pathname">
-            </form>
+        <div class="very-important">
+          <p>
+            IMPORTANT: PLEASE COMPLETE THE PRACTICAL EXAM KIT LINKED BELOW
+            BEFORE STARTING THE ONLINE EXAM - YOU NEED IT FOR PART 1 OF THE EXAM
+          </p>
         </div>
-         <div id="kits"></div>
-         <div id="instructions">
-<p>When you are ready, the code to start the exam is in the EXAM_CODE.txt file in the kit linked above. Please copy and paste the code from the EXAM_CODE.txt file.</p>
+        <p>Please click the name of the course you need the exam code for</p>
+        <div>
+          <form method="get" id="kitform">
+            <label for="kit">Select an option:</label>
+            <select id="kit" name="kit"></select>
+            <br /><br />
+            <input type="submit" value="Submit" />
+            <input
+              type="button"
+              value="Reset"
+              onClick="window.location = window.location.pathname"
+            />
+          </form>
+        </div>
+        <div id="kits"></div>
+        <div id="instructions">
+          <p>
+            When you are ready, the code to start the exam is in the
+            EXAM_CODE.txt file in the kit linked above. Please copy and paste
+            the code from the EXAM_CODE.txt file.
+          </p>
 
-<h2>A reminder on the testing policy</h2>
-<ul>
-                 <li>You must get 75% to pass the exam.</li>
-                 <li>All Software exams (such as this one) are 'Open Program', You are expected to open the program just learned and refer to it during the exam.</li>
-                 <li id="acs">Microsoft Access Level 1 and 2 are Open Book exams</li>
-                 <li>If you have not done the hands-on exercises due to not having Office 2019 installed on your computer, please log into Office.com with your school email to get a complimentary copy for use during your studies. If you need help with this, call the campus.</li>
-                 <li>The time limit is 3 hours per part - this is for a reason.</li>
-                 <li>Please try to take at least 1 hour to complete the exam to give yourself sufficient time to read and understand the questions.</li>
-                 <li>If there is a question that you do not understand, you can call the campus and ask for clarification. We cannot give you the answer, but we can reword the question for you.</li>
-                 <li>Your 1st attempt is free, and you can get up to 100%</li>
-                 <li>Your 2nd attempt is free, but the maximum grade is 89%</li>
-                 <li>There is a $30 fee for the 3rd attempt. The maximum grade is 89%</li>
-                 <li>If you fail the 3rd attempt, you will have to pay for and retake the entire course again.</li>
-     </ul>
+          <h2>A reminder on the testing policy</h2>
+          <ul>
+            <li>You must get 75% to pass the exam.</li>
+            <li>
+              All Software exams (such as this one) are 'Open Program', You are
+              expected to open the program just learned and refer to it during
+              the exam.
+            </li>
+            <li id="acs">Microsoft Access Level 1 and 2 are Open Book exams</li>
+            <li>
+              If you have not done the hands-on exercises due to not having
+              Office 2019 installed on your computer, please log into Office.com
+              with your school email to get a complimentary copy for use during
+              your studies. If you need help with this, call the campus.
+            </li>
+            <li>The time limit is 3 hours per part - this is for a reason.</li>
+            <li>
+              Please try to take at least 1 hour to complete the exam to give
+              yourself sufficient time to read and understand the questions.
+            </li>
+            <li>
+              If there is a question that you do not understand, you can call
+              the campus and ask for clarification. We cannot give you the
+              answer, but we can reword the question for you.
+            </li>
+            <li>Your 1st attempt is free, and you can get up to 100%</li>
+            <li>Your 2nd attempt is free, but the maximum grade is 89%</li>
+            <li>
+              There is a $30 fee for the 3rd attempt. The maximum grade is 89%
+            </li>
+            <li>
+              If you fail the 3rd attempt, you will have to pay for and retake
+              the entire course again.
+            </li>
+          </ul>
 
-     <div>
-        <p>If you have any issues completing the practical exam or accessing the online portions, please call us right away.</p>
-     <p>For best results, we recommend completing both portions at the campus. That way you can get immediate assistance by putting your question mark up.</p>
-     </div>
-    </div>
-    </div>
+          <div>
+            <p>
+              If you have any issues completing the practical exam or accessing
+              the online portions, please call us right away.
+            </p>
+            <p>
+              For best results, we recommend completing both portions at the
+              campus. That way you can get immediate assistance by putting your
+              question mark up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
- </main>
-
- <include src="./src/components/footer.htm"></include>
- <script src="/js/examkits.js"></script>
-</body>
-
+    <include src="./src/components/footer.htm"></include>
+    <script src="/js/examkits.js"></script>
+  </body>
 </html>

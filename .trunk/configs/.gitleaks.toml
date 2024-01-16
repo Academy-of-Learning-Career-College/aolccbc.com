@@ -1,0 +1,3 @@
+[[ignore]]
+description = "Ignore did-configuration.json file"
+file = '''static\\.well-known\\did-configuration.json'''
