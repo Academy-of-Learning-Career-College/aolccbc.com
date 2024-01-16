@@ -3,8 +3,10 @@ const path = require("path");
 require("dotenv").config();
 
 const folderPath = process.env.PROGRAMSSRC;
-
 const programJs = process.env.PROGRAMJS;
+
+console.log(folderPath);
+console.log(programJs);
 
 // Get all js files in folder
 const jsFiles = fs
