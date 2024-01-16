@@ -4,8 +4,8 @@ const csv = require("csv-parser");
 const XLSX = require("xlsx");
 require("dotenv").config();
 
-const xlsxfile = process.env.xlsxfile;
-const csvFilePath = process.env.csvFilePath;
+const xlsxfile = process.env.XLSXFILE;
+const csvFilePath = process.env.CSVFILEPATH;
 
 //const temp = 'temp'
 // const xlsxfile = './src/data/programlisting.xlsx'; // Specify the path to your XLSX file

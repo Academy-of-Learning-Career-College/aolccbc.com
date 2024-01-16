@@ -5,10 +5,10 @@ const path = require("path");
 require("dotenv").config();
 
 // const temp = 'temp'
-// const xlsxfile = process.env.xlsxfile
-const csvFilePath = process.env.csvFilePath;
-const jsonFile = process.env.jsonFilePath;
-const smorgsSite = process.env.smorgsSite;
+// const xlsxfile = process.env.XLSXFILE
+const csvFilePath = process.env.CSVFILEPATH;
+const jsonFile = process.env.JSONFILEPATH;
+const smorgsSite = process.env.SMORGSSITE;
 
 log(csvFilePath);
 
