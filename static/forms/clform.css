@@ -1,19 +1,28 @@
 :root {
-     --ifm-color-content: #e3e3e3;
+    --ifm-color-content: #e3e3e3;
     --ifm-fot-color-base: var(--ifm-color-content);
+    --aol-black: #535353cc;
+    --aol-blue: #5acbda;
+    --aol-green: #a9ca3f;
+    --aol-orange: #ea7024;
+    --dark-grey: #302e2fff;
+    --aol-white: #e2ded8;
+    --dark-blue: #084468ff;
 }
 
 .clf-form .clf-d-submitbutton {
 
-color: #ffffff !important; 
-width: 100% !important;
-background-color: rgb(234,112,36) !important;
-border:none !important;
-padding:10px !important;
-margin: auto !important;
+    color: #fff !important;
+    width: 100% !important;
+    background-color: var(--aol-orange) !important;
+    border: none !important;
+    padding: 10px !important;
+    margin: auto !important;
 
 
 }
-.clf-form, .clf-form * {
-color: var(--ifm-font-color-base) !important;
+
+.clf-form,
+.clf-form * {
+    color: var(--ifm-font-color-base) !important;
 }

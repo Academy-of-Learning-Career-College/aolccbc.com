@@ -4,6 +4,7 @@
 
 table {
     max-width: 500px;
+    border-collapse: collapse;
 }
 
 .avatar {
@@ -11,12 +12,8 @@ table {
 }
 
 .orangehr {
-    background-color: rgb(232, 100, 4);
+    background-color: #e86404;
     font-size: 2px;
-}
-
-table {
-    border-collapse: collapse;
 }
 
 .disclaimer {
@@ -26,7 +23,7 @@ table {
 }
 
 .title {
-    color: rgb(232, 100, 4);
+    color: #e86404;
 }
 
 body {

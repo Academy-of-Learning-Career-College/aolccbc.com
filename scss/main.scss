@@ -1,22 +1,18 @@
 /* Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-// @import url("https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css");
-// @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
-
 @import "../node_modules/mdb-ui-kit/css/mdb.min.css";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 :root {
-    --aol-black: rgba(83, 83, 83, 0.8);
-    --aol-blue: rgb(90, 203, 218);
-    --aol-green: rgb(169, 202, 63);
-    --aol-orange: rgb(234, 112, 36);
-    --dark-grey: rgba(48, 46, 47, 1);
-    --aol-white: rgb(226,222,216);
-    --dark-blue: rgba(8, 68, 104, 1);
+    --aol-black: #535353cc;
+    --aol-blue: #5acbda;
+    --aol-green: #a9ca3f;
+    --aol-orange: #ea7024;
+    --dark-grey: #302e2fff;
+    --aol-white: #e2ded8;
+    --dark-blue: #084468ff;
 }
 
 .bg-dark-gray,.grey-bg {
