@@ -1,12 +1,14 @@
+from urllib.parse import urljoin, urlparse
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urlparse, urljoin
 
 # Set the starting URL
 base_url = "127.0.0.1:1234"
 
 # Initialize a set to store visited URLs
 visited_urls = set()
+
 
 # Define a function to crawl a URL and check for dead links
 def crawl(url):
@@ -39,6 +41,7 @@ def crawl(url):
                 # Check if the URL has already been visited
                 if full_url not in visited_urls:
                     crawl(full_url)
+
 
 # Start crawling from the base URL
 crawl(base_url)

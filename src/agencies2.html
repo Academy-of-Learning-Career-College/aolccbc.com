@@ -1,97 +1,105 @@
 <!DOCTYPE html lang="en">
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link href="https://unpkg.com/bootstrap-table@1.22.1/dist/extensions/page-jump-to/bootstrap-table-page-jump-to.min.css" rel="stylesheet"> -->
 
-<head>
-      <meta charset="utf-8">
-      <!-- <link href="https://unpkg.com/bootstrap-table@1.22.1/dist/extensions/page-jump-to/bootstrap-table-page-jump-to.min.css" rel="stylesheet"> -->
-
-      <include src="./src/components/head.htm">{
-          "title" : "Tuition Table"
-
-        }
+    <include src="./src/components/head.htm"
+      >{ "title" : "Tuition Table" }
     </include>
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css"
+    />
 
     <style>
-        .col {
-            margin-left: 1%;
-            margin-right: 1%;
-        }
+      .col {
+        margin-left: 1%;
+        margin-right: 1%;
+      }
 
-        table td {
-            font-size: unset;
-        }
+      table td {
+        font-size: unset;
+      }
 
-        table.center {
-            margin-left: auto;
-            margin-right: auto;
-            font-size: medium;
-        }
+      table.center {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: medium;
+      }
 
-        .blacktext {
-            color: black;
+      .blacktext {
+        color: black;
+      }
 
-
-        }
-
-        a {
-            text-decoration: underline;
-            color: black;
-        }
+      a {
+        text-decoration: underline;
+        color: black;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container center">
-        <img src="~/images/aolcclogo.png?as=webp" style="max-height: 150px;" alt="logo">
-        <h1>Full Program Listing</h1>
-        <p>Dear sir/madam,<br>
-            Please find following a copy of the programs currently offered at Academy of Learning Career College at our
-            Langley and Abbotsford Campuses.<br></p>
-        <p>Kindly contact Christina Clayton at our Langley Campus at 604-532-4040 or <a
-                href="mailto:admin.langley@aolccbc.com">admin.langley@aolccbc.com</a><br>
-            or Mary Ellen Olynuk at our Abbotsford Campus at 604-855-3315 or <a
-                href="mailto:admin.abbotsford@aolccbc.com">admin.abbotsford@aolccbc.com</a></p>
+      <img
+        src="~/images/aolcclogo.png?as=webp"
+        style="max-height: 150px"
+        alt="logo"
+      />
+      <h1>Full Program Listing</h1>
+      <p>
+        Dear sir/madam,<br />
+        Please find following a copy of the programs currently offered at
+        Academy of Learning Career College at our Langley and Abbotsford
+        Campuses.<br />
+      </p>
+      <p>
+        Kindly contact Christina Clayton at our Langley Campus at 604-532-4040
+        or
+        <a href="mailto:admin.langley@aolccbc.com">admin.langley@aolccbc.com</a
+        ><br />
+        or Mary Ellen Olynuk at our Abbotsford Campus at 604-855-3315 or
+        <a href="mailto:admin.abbotsford@aolccbc.com"
+          >admin.abbotsford@aolccbc.com</a
+        >
+      </p>
 
-
-                <table
-                id="table"
-                class="center"
-                data-toggle="table"
-                data-searchable="true"
-                data-search="true"
-                data-pagination="true"
-                data-page-size="25"
-                data-search-highlight="true"
-                data-height="800"
-                data-page-list="[10, 25, 50, 100, 200, All]"
-                data-side-pagination="client"
-                data-url="/data/programtable.json"
-                >
-            <tr><thead>
+      <table
+        id="table"
+        class="center"
+        data-toggle="table"
+        data-searchable="true"
+        data-search="true"
+        data-pagination="true"
+        data-page-size="25"
+        data-search-highlight="true"
+        data-height="800"
+        data-page-list="[10, 25, 50, 100, 200, All]"
+        data-side-pagination="client"
+        data-url="/data/programtable.json"
+      >
+        <tr>
+          <thead>
             <th data-sortable="true" data-field="name">Program Name</th>
             <th data-sortable="true" data-field="weeks">@ 25 hours a week</th>
             <th data-sortable="true" data-field="cost">Cost</th>
             <th data-field="Syllabus">Syllabus</th>
-            </thead></tr>
-            </table>
+          </thead>
+        </tr>
+      </table>
 
-
-
-
-        <div class="blacktext">
-            <h3>*Diploma and Certificate Programs can be customized, courses may also be taken individually, please
-                contact your Admissions Adviser for more information.</h3>
-            <p>Abbotsford ☎ <a href="tel:16048553315">604-855-3315</a></p>
-            <p>Langley ☎ <a href="tel:16045324040">604-532-4040</a></p>
-        </div>
+      <div class="blacktext">
+        <h3>
+          *Diploma and Certificate Programs can be customized, courses may also
+          be taken individually, please contact your Admissions Adviser for more
+          information.
+        </h3>
+        <p>Abbotsford ☎ <a href="tel:16048553315">604-855-3315</a></p>
+        <p>Langley ☎ <a href="tel:16045324040">604-532-4040</a></p>
+      </div>
     </div>
-
 
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
-
-</body>
-
+  </body>
 </html>

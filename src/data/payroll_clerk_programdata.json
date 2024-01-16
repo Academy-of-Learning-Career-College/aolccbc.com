@@ -1,72 +1,72 @@
 {
-    "admitreq": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Grade 12 or equivalent graduate or Mature Student status (19 years of age or over with at least one year out of high school). Mature Students must successfully complete an admissions test to properly assess their personal strengths and weaknesses. Good command of the English language, and be able to work with an individualized learning system, particularly the Integrated Learning™ System, or online learning as applicable, and to follow instructions."
-            }
-        ]
-    },
-    "programhighlights": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "The Payroll Clerk program provides students with the skills necessary to perform basic payroll administrative responsibilities with some understanding of payroll regulations and legislation. The Canadian Payroll Association's(CPA) courses covered in this program apply towards the CPA's Payroll Compliance Practitioner (PCP) certification."
-            }
-        ]
-    },
-    "careeropp": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Successful candidates can pursue careers in the financial sector, specially payroll, benefits, insurance, claims, and mortgage. Upward mobility in these vocations is possible with experience, motivation, dedication, and a positive attitude."
-            }
-        ]
-    },
-    "corecourses": {
-        "paragraphs": [
-            {
-                "style": "p",
-                "content": "Upon completion of the program the participant must demonstrate the following core competencies:"
-            },
-            {
-                "ul_start": "true"
-            },
-            {
-                "style": "li",
-                "li_title": "Operating Systems",
-                "content": "Basic level of proficiency in a Windows operating system "
-            },
-            {
-                "style": "li",
-                "li_title": "Word Processing ",
-                "content": "Basic level of proficiency in Microsoft Word "
-            },
-            {
-                "style": "li",
-                "li_title": "Spreadsheets",
-                "content": "Basic level of proficiency in Microsoft Excel"
-            },
-            {
-                "style": "li",
-                "li_title": "Office Skills ",
-                "content": "Basic Bookkeeping Level 1 and a basic level of proficiency in Microsoft Outlook "
-            },
-            {
-                "style": "li",
-                "li_title": "Accounting",
-                "content": "Sage 50 Premium Accounting, Payroll Compliance Legislation, and PayrollFundamentals 1 and 2"
-            },
-            {
-                "style": "li",
-                "li_title": "Employability Skills ",
-                "content": "Job Search and Résumé Writing "
-            },
-            {
-                "ul_end": "true"
-            }
-        ]
-    },
-    "salarystart": 31077,
-    "salaryend": 55177
+  "admitreq": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Grade 12 or equivalent graduate or Mature Student status (19 years of age or over with at least one year out of high school). Mature Students must successfully complete an admissions test to properly assess their personal strengths and weaknesses. Good command of the English language, and be able to work with an individualized learning system, particularly the Integrated Learning™ System, or online learning as applicable, and to follow instructions."
+      }
+    ]
+  },
+  "programhighlights": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "The Payroll Clerk program provides students with the skills necessary to perform basic payroll administrative responsibilities with some understanding of payroll regulations and legislation. The Canadian Payroll Association's(CPA) courses covered in this program apply towards the CPA's Payroll Compliance Practitioner (PCP) certification."
+      }
+    ]
+  },
+  "careeropp": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Successful candidates can pursue careers in the financial sector, specially payroll, benefits, insurance, claims, and mortgage. Upward mobility in these vocations is possible with experience, motivation, dedication, and a positive attitude."
+      }
+    ]
+  },
+  "corecourses": {
+    "paragraphs": [
+      {
+        "style": "p",
+        "content": "Upon completion of the program the participant must demonstrate the following core competencies:"
+      },
+      {
+        "ul_start": "true"
+      },
+      {
+        "style": "li",
+        "li_title": "Operating Systems",
+        "content": "Basic level of proficiency in a Windows operating system "
+      },
+      {
+        "style": "li",
+        "li_title": "Word Processing ",
+        "content": "Basic level of proficiency in Microsoft Word "
+      },
+      {
+        "style": "li",
+        "li_title": "Spreadsheets",
+        "content": "Basic level of proficiency in Microsoft Excel"
+      },
+      {
+        "style": "li",
+        "li_title": "Office Skills ",
+        "content": "Basic Bookkeeping Level 1 and a basic level of proficiency in Microsoft Outlook "
+      },
+      {
+        "style": "li",
+        "li_title": "Accounting",
+        "content": "Sage 50 Premium Accounting, Payroll Compliance Legislation, and PayrollFundamentals 1 and 2"
+      },
+      {
+        "style": "li",
+        "li_title": "Employability Skills ",
+        "content": "Job Search and Résumé Writing "
+      },
+      {
+        "ul_end": "true"
+      }
+    ]
+  },
+  "salarystart": 31077,
+  "salaryend": 55177
 }

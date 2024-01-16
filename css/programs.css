@@ -39,7 +39,7 @@ h1 {
 }
 
 .row,
-.row>.column {
+.row > .column {
   padding: 8px;
 }
 

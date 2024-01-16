@@ -1,32 +1,32 @@
 .logos {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 table {
-    max-width: 500px;
-    border-collapse: collapse;
+  max-width: 500px;
+  border-collapse: collapse;
 }
 
 .avatar {
-    width: 67px;
+  width: 67px;
 }
 
 .orangehr {
-    background-color: #e86404;
-    font-size: 2px;
+  background-color: #e86404;
+  font-size: 2px;
 }
 
 .disclaimer {
-    color: gray;
-    word-break: break-word;
-    max-width: 200px;
+  color: gray;
+  word-break: break-word;
+  max-width: 200px;
 }
 
 .title {
-    color: #e86404;
+  color: #e86404;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 9pt;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
 }

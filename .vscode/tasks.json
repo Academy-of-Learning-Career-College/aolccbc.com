@@ -1,23 +1,23 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "npm",
-			"script": "build",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"problemMatcher": [],
-			"label": "npm: build",
-			"detail": "npm run make_programs_js && node ./generate_program_pages.js && npm run sitemap && parcel build"
-		},
-		{
-			"type": "npm",
-			"script": "dev",
-			"problemMatcher": [],
-			"label": "npm: dev",
-			"detail": "npm run make_programs_js && node ./generate_program_pages.js && npm run sitemap && parcel"
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "npm: build",
+      "detail": "npm run make_programs_js && node ./generate_program_pages.js && npm run sitemap && parcel build"
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "npm: dev",
+      "detail": "npm run make_programs_js && node ./generate_program_pages.js && npm run sitemap && parcel"
+    }
+  ]
 }

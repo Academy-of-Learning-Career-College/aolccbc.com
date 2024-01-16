@@ -1,7 +1,7 @@
-function emptyElementByID (elementID) {
+function emptyElementByID(elementID) {
   try {
-    document.getElementById(elementID).innerHTML = ''
+    document.getElementById(elementID).innerHTML = "";
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
 }

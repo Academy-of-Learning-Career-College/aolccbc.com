@@ -1,35 +1,27 @@
 {
-    "spellright.language": [
-        "en"
-    ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext",
-        "ini",
-        "json"
-    ],
-    "cSpell.words": [
-        "admitreq",
-        "Alda",
-        "AOLCC",
-        "CAPM",
-        "careeropp",
-        "CELPIP",
-        "CLSC",
-        "CMAP",
-        "corecourses",
-        "Dreamweaver",
-        "IELTS",
-        "Intrapreneurship",
-        "MCSA",
-        "Photoshop",
-        "programhighlights",
-        "programname",
-        "programtype",
-        "Résumé",
-        "salarystart",
-        "Wonderlic"
-    ],
-    "editor.inlineSuggest.showToolbar": "always"
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext", "ini", "json"],
+  "cSpell.words": [
+    "admitreq",
+    "Alda",
+    "AOLCC",
+    "CAPM",
+    "careeropp",
+    "CELPIP",
+    "CLSC",
+    "CMAP",
+    "corecourses",
+    "Dreamweaver",
+    "IELTS",
+    "Intrapreneurship",
+    "MCSA",
+    "Photoshop",
+    "programhighlights",
+    "programname",
+    "programtype",
+    "Résumé",
+    "salarystart",
+    "Wonderlic"
+  ],
+  "editor.inlineSuggest.showToolbar": "always"
 }

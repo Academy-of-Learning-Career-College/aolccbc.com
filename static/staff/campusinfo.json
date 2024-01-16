@@ -1,18 +1,18 @@
 {
-    "campus": [
-      {
-        "name": "Abbotsford Campus",
-        "phone": "604-855-3315",
-        "fax": "604-855-3365",
-        "tf" : "1-866-531-8609",
-        "address": "204-2692 Clearbrook Road, Abbotsford, BC  V2T 2Y8"
-      },
-      {
+  "campus": [
+    {
+      "name": "Abbotsford Campus",
+      "phone": "604-855-3315",
+      "fax": "604-855-3365",
+      "tf": "1-866-531-8609",
+      "address": "204-2692 Clearbrook Road, Abbotsford, BC  V2T 2Y8"
+    },
+    {
       "name": "Langley Campus",
       "phone": "604-532-4040",
       "fax": "604-532-4001",
-      "tf" :"1-800-665-3518",
+      "tf": "1-800-665-3518",
       "address": "201-20621 Logan Ave, Langley, BC  V3A 7R3"
-      }
-    ]
-  }
+    }
+  ]
+}
