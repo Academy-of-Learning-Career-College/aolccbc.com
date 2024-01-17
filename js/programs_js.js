@@ -1,15 +1,3 @@
-var headings = [
-  {
-    a1: "Admission Requirements",
-    a2: "Program Highlights",
-    a3: "Career Opportunities",
-    a4: "CORE COURSES",
-    a5: "Upon completion of the program the participant must demonstrate the following core competencies:",
-  },
-];
-var programsWithNoDataTable = {
-  program: "english_as_a_second_language",
-};
 function buildProgramPage(
   programnameasurl,
   programname,
@@ -381,6 +369,18 @@ function buildSlideShow() {
       document.getElementById("slides").innerHTML = mycontent;
     });
 }
+var headings = [
+  {
+    a1: "Admission Requirements",
+    a2: "Program Highlights",
+    a3: "Career Opportunities",
+    a4: "CORE COURSES",
+    a5: "Upon completion of the program the participant must demonstrate the following core competencies:",
+  },
+];
+var programsWithNoDataTable = {
+  program: "english_as_a_second_language",
+};
 function closeOverlay() {
   hideshowElementById("programoverlay", "hide");
   emptyElementByID("programoverlay");
@@ -1585,6 +1585,9 @@ function toCAD(t, e) {
     return " ";
   }
 }
+function w3RemoveClass(element, name) {
+  element.classList.remove(name);
+}
 function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -1594,7 +1597,4 @@ function w3AddClass(element, name) {
       element.className += " " + arr2[i];
     }
   }
-}
-function w3RemoveClass(element, name) {
-  element.classList.remove(name);
 }
