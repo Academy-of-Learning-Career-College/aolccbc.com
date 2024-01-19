@@ -11,12 +11,17 @@ The script performs the following actions:
 #>
 
 # Function to create a shortcut
+
+# GLOBALS
+$gh = 'https://raw.githubusercontent.com/Academy-of-Learning-Career-College/AOLCCApps/master/Typing'
+
 function CreateShortcut {
     param (
         [string]$Target,
         [string]$IconFile,
         [string]$Name,
-        [string]$Folder
+        [string]$Folder,
+        [string]$IconIndex = "0"
     )
 
     # Create the folder if it does not exist
@@ -32,7 +37,7 @@ function CreateShortcut {
         Set-Content -Path $shortcutPath -Value "[InternetShortcut]"
         Add-Content -Path $shortcutPath -Value "URL=$Target"
         Add-Content -Path $shortcutPath -Value "IconFile=$IconFile"
-        Add-Content -Path $shortcutPath -Value "IconIndex=0"
+        Add-Content -Path $shortcutPath -Value "IconIndex=$IconIndex"
         Write-Host "Shortcut created successfully at: $shortcutPath"
     } catch {
         Write-Error "An error occurred while creating the shortcut: $_"
@@ -140,7 +145,7 @@ function ConfigureTypingTrainerForCampusUse {
 
     # Configure Typing Trainer for Campus Database
     # Source Root
-    $gh = 'https://raw.githubusercontent.com/Academy-of-Learning-Career-College/AOLCCApps/master/Typing'
+    
     # Source With location
     $src = "$gh/$Location"
 
@@ -159,6 +164,9 @@ function ConfigureTypingTrainerForCampusUse {
     # Typing Trainer App Folder
     $ttProgDir = Join-Path $ProgFiles "TypingTrainer"
     
+
+    #submit Results File
+
     # Database file
     $dbSrc = "$src/database.txt"
     $dbDest = Join-Path $ttProgDir "database.txt"
@@ -168,6 +176,34 @@ function ConfigureTypingTrainerForCampusUse {
     }
     Invoke-WebRequest -Uri $dbSrc -OutFile $dbDest -UseBasicParsing
 }
+
+function SetupTypingTrainerTasks {
+    param (
+        [string]$UploadWebhookUrl,
+        [string]$CheckWebhookUrl,
+        [string]$upn
+    )
+
+    # Pre-construct the argument strings with variable expansion for Invoke-RestMethod
+    $UploadArgument = "-NoProfile -WindowStyle Hidden -Command ""Invoke-RestMethod -Uri '$($UploadWebhookUrl)' -Method Post -ContentType 'text/html' -InFile 'C:\ProgramData\TypingTrainer\type_results.html'"""
+    $CheckArgument = "-NoProfile -WindowStyle Hidden -Command ""& { try { `$response = Invoke-RestMethod -Uri '$($CheckWebhookUrl)?upn=$($upn)' -UseBasicParsing -Method Get; if (`$response -ne 'Ok') { Unregister-ScheduledTask -TaskName 'TypingTrainerUpload' -Confirm:`$false; Unregister-ScheduledTask -TaskName 'CheckMicrosoftAccount' -Confirm:`$false } } catch { Unregister-ScheduledTask -TaskName 'TypingTrainerUpload' -Confirm:`$false; Unregister-ScheduledTask -TaskName 'CheckMicrosoftAccount' -Confirm:`$false } }"""
+
+
+    # Main task to upload typing results
+    $UploadAction = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument $UploadArgument
+    $UploadTrigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Friday -At 12pm
+    $Principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -LogonType ServiceAccount -RunLevel Highest
+    Register-ScheduledTask -Action $UploadAction -Trigger $UploadTrigger -Principal $Principal -TaskName "TypingTrainerUpload" -Description "Upload Typing Trainer results every Friday at noon"
+
+    # Checking task to monitor the Microsoft account's existence
+    $CheckAction = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument $CheckArgument
+    $CheckTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(5) -RepetitionInterval (New-TimeSpan -Hours 24)
+    Register-ScheduledTask -Action $CheckAction -Trigger $CheckTrigger -Principal $Principal -TaskName "CheckMicrosoftAccount" -Description "Check if Microsoft account exists and remove tasks if not"
+}
+
+
+
+
 
 # Main script execution
 $homeDrive = "c:\"
@@ -183,12 +219,33 @@ if (!(Test-Path (Join-Path $homeDrive "staffpc"))) {
     $publicDesktop = Join-Path $homeDrive "users\public\desktop"
     $defaultIcon = Join-Path $homeDrive "ssp.ico"
     $ProgFiles = Join-Path $homeDrive "Program Files (x86)"
-    
+        Remove-Item "$publicDesktop\*.lnk"
+    Remove-Item "$publicDesktop\*.url"
     if((Test-RunningAsSystem)){
         $location = (Invoke-WebRequest -UseBasicParsing "http://ip.aolccbc.com/campus").Content
         
     } else {
         $location = 'OffSite'
+        #setup upload shortcut
+        # https://raw.githubusercontent.com/Academy-of-Learning-Career-College/AOLCCApps/master/Typing/submit_results.bat
+        
+        $uploadScript = 'submit_results.bat'
+        $uploadScriptSrc = "$gh/$uploadScript"
+        $uploadScriptDest = Join-Path $ScriptingDir $uploadScript
+        Invoke-WebRequest -Uri $uploadScriptSrc -OutFile $uploadScriptDest -UseBasicParsing
+        CreateShortcut -Folder $publicDesktop -Name "Submit Typing Results" -IconFile "$homeDrive\windows\system32\SHELL32.dll" -Target $uploadScriptDest -IconIndex "264"
+        # Prompt the user for setup
+        $setupAutoUpload = Read-Host "Do you want to setup auto uploading of typing results? (y/n)"
+
+if ($setupAutoUpload -eq "y") {
+    $schoolEmail = Read-Host "Please enter your school email address"
+    SetupTypingTrainerTasks -upn $schoolEmail -CheckWebhookUrl "https://n8n.aolccbc.com/webhook/6de9506e-2a0c-4cb5-9943-17f9bbbffcae" -UploadWebhookUrl "https://n8n.aolccbc.com/webhook/5d0245b1-67c6-4884-86d4-ca46f16ce67e"
+} else {
+    Write-Host "Auto upload setup skipped."
+}
+
+
+
     }
 
 
@@ -198,6 +255,9 @@ if (!(Test-Path (Join-Path $homeDrive "staffpc"))) {
         ConfigureTypingTrainerForCampusUse -Location $location -ScriptingDir $ScriptingDir -ProgFiles $ProgFiles
     } else {
         $ttShortcut = (Join-Path $ProgFiles "TypingTrainer\TypingTrainer.exe").Replace("\","/")
+
+
+
         if(Test-Path -Path (Join-Path $ProgFiles "TypingTrainer\database.txt")){
             Write-Host "Typing Database file detected on Student Personal Computer"
             Write-Host "This will cause issues when they go home. Deleting database file"
@@ -206,8 +266,7 @@ if (!(Test-Path (Join-Path $homeDrive "staffpc"))) {
     }
     
 
-    Remove-Item "$publicDesktop\*.lnk"
-    Remove-Item "$publicDesktop\*.url"
+
 
     Invoke-WebRequest -UseBasicParsing -Uri "https://i.aolccbc.com/favicon.ico" -OutFile $defaultIcon
 
