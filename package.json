@@ -92,7 +92,7 @@
     "posthtml": "^0.16.6",
     "posthtml-doctype": "^1.1.1",
     "posthtml-expressions": "^1.11.0",
-    "posthtml-include": "^1.7.4",
+    "posthtml-include": "^2.0.1",
     "prismjs": "^1.29.0",
     "textlint-rule-period-in-list-item": "^1.0.1",
     "textlint-rule-spelling": "^0.3.0",
