@@ -1,0 +1,75 @@
+<script>
+    const x = document.getElementById("geoNotice");
+    function showModal() {
+    const modal = document.getElementById("locationModal");
+    modal.style.display = "block";
+  
+    // Continue button just closes the modal
+    document.getElementById("continueBtn").onclick = function() {
+      modal.style.display = "none";
+    };
+  
+    // Locations page button takes the user to the locations page
+    document.getElementById("locationsPageBtn").onclick = function() {
+      window.location.href = 'https://www.academyoflearning.com/locations/'; // Update with the correct URL to your locations page
+    };
+  
+    // Optional: Close the modal if the user clicks anywhere outside of the modal content
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  }
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else {
+        x.innerHTML = "Sorry, we can't get your location. The information on this page may be specific to the Abbotsford or Langley campuses. If you are registered at a different campus, please reach out to your campus for further assistance.";
+      }
+    }
+  
+    function showPosition(position) {
+      const requestURL = `https://geocode.maps.co/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&api_key=65f08634425e9560317613jxu4bc408`; // Replace YOUR_API_KEY with your actual API key
+      fetch(requestURL)
+        .then(response => {
+          if (response.status === 200) {
+            return response.json();
+          } else {
+            throw new Error('Location information not available');
+          }
+        })
+        .then(data => {
+          // Assuming the API returns a JSON object where you can extract a meaningful location description
+          const state = data.address.state
+          if (state !== 'British Columbia') {
+      showModal();
+    }
+          console.log(data.address.state)
+          const locationDescription = data.display_name; // This path might differ based on the actual API response structure
+          x.innerHTML = `Latitude : ${position.coords.latitude}<br>Longitude: ${position.coords.longitude}<br>Location: ${locationDescription}`;
+        })
+        .catch(error => {
+          x.innerHTML = `Latitude : ${position.coords.latitude}<br>Longitude: ${position.coords.longitude}<br>Error retrieving location details: ${error.message}`;
+        });
+    }
+  
+    function showError(error) {
+      switch(error.code) {
+        case error.PERMISSION_DENIED:
+          x.innerHTML = "User denied the request for Geolocation.";
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML = "Location information is unavailable.";
+          break;
+        case error.TIMEOUT:
+          x.innerHTML = "The request to get user location timed out.";
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML = "An unknown error occurred.";
+          break;
+      }
+    }
+  
+    getLocation();
+  </script>
