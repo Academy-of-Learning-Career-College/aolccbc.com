@@ -64,7 +64,7 @@
     "process": "^0.11.10",
     "sharp": "^0.31.3",
     "stream-browserify": "^3.0.0",
-    "textlint": "^13.3.2",
+    "textlint": "^14.0.4",
     "textlint-rule-no-dead-link": "^5.1.2",
     "w3c-xml-validator": "^1.1.0"
   },
