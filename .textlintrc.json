@@ -1,9 +1,0 @@
-{
-  "plugins": {},
-  "filters": {},
-  "rules": {
-    "no-dead-link": true,
-    "spelling": true,
-    "period-in-list-item": true
-  }
-}

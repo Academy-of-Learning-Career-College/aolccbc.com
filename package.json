@@ -3,37 +3,14 @@
   "description": "This is the source code for aolccbc.com",
   "version": "2.0.0",
   "scripts": {
-    "build": "npm-run-all convert_data parcel:build",
-    "prep": "node ./scripts/prep.js",
-    "dev": "npm-run-all convert_data parcel",
-    "debug": "npm-run-all make_programs_js generate_program_pages sitemap parcel:build:verbose",
-    "live_debug": "npm-run-all build_program_pages parcel:verbose open",
-    "sitemap": "npx sitemap-generator-cli -f static/sitemap.xml -d 5 -v -l aolccbc.com",
-    "make_programs_js": "node ./scripts/compile_programs",
-    "generate_program_pages": "node ./scripts/generate_program_pages.js",
-    "convert_data": "npm-run-all make_programs_js generate_program_pages build_agency_page sitemap",
-    "build_agency_page": "node ./scripts/build_agency_page.js",
-    "parcel:build": "parcel build",
-    "parcel:build:verbose": "parcel build --log-level verbose",
-    "parcel": "parcel",
-    "parcel:verbose": "parcel --log-level verbose",
-    "open": "parcel --open"
-  },
-  "overrides": {
-    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
+    "build": "parcel build",
+    "start": "parcel"
   },
   "source": "src/index.html",
   "targets": {
     "default": {
       "distDir": "./www"
     }
-  },
-  "engines": {
-    "node": ">=19.8.0",
-    "npm": ">=9.6.0",
-    "posthtml": ">=0.16.6",
-    "@parcel/transformer-jsonld": ">=2.7.0",
-    "parcel": ">=2.7.0"
   },
   "repository": {
     "type": "git",
@@ -46,56 +23,7 @@
   },
   "homepage": "https://github.com/Academy-of-Learning-Career-College/aolccbc.com#readme",
   "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@microsoft/eslint-formatter-sarif": "^3.0.0",
-    "@parcel/optimizer-terser": "^2.9.3",
-    "@parcel/packager-raw-url": "^2.11.0",
-    "@parcel/transformer-sass": "^2.8.3",
-    "@parcel/transformer-webmanifest": "^2.11.0",
-    "babel-plugin-module-resolver": "^5.0.0",
-    "child_process": "^1.0.2",
-    "events": "^3.3.0",
-    "node-input-validator": "^4.5.1",
-    "nodemon": "^3.0.1",
-    "parcel": "^2.7.0",
-    "parcel-reporter-static-files-copy": "^1.4.0",
-    "posthtml-img-autosize": "^0.1.6",
-    "posthtml-modules": "^0.9.0",
-    "process": "^0.11.10",
-    "sharp": "^0.31.3",
-    "stream-browserify": "^3.0.0",
-    "textlint": "^13.3.2",
-    "textlint-rule-no-dead-link": "^5.1.2",
-    "w3c-xml-validator": "^1.1.0"
-  },
-  "dependencies": {
-    "@fontsource/questrial": "^5.0.0",
-    "@fontsource/raleway": "^5.0.5",
-    "@fontsource/roboto": "^5.0.0",
-    "@fortawesome/fontawesome-free": "^6.5.1",
-    "@gravityforms/components": "^4.0.5",
-    "@parcel/plugin": "^2.7.0",
-    "@popperjs/core": "^2.11.7",
-    "axios": "^1.4.0",
-    "bootstrap": "^5.3.0",
-    "csv-parser": "^3.0.0",
-    "csv-to-markdown-table": "^1.3.1",
-    "csv-writer": "^1.6.0",
-    "csvtojson": "^2.0.10",
-    "dictionary-en": "^4.0.0",
-    "dotenv": "^16.3.1",
-    "jquery": "^3.7.0",
-    "katex": "^0.16.4",
-    "katex-copytex": "^1.0.2",
-    "mdb-ui-kit": "^6.4.0",
-    "npm-run-all": "^4.1.5",
-    "posthtml": "^0.16.6",
-    "posthtml-doctype": "^1.1.1",
-    "posthtml-expressions": "^1.11.0",
-    "posthtml-include": "^1.7.4",
-    "prismjs": "^1.29.0",
-    "textlint-rule-period-in-list-item": "^1.0.1",
-    "textlint-rule-spelling": "^0.3.0",
-    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
+    "@babel/core": "^7.24.1",
+    "parcel": "^2.12.0"
   }
 }
